@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   get 'librarian_home' => 'librarian_home#index', :as => :librarian_home
   get 'student_home' => 'student_home#index', :as => :student_home
   get 'approve_librarian/:id' => 'librarians#approve_librarian', :as => :approve_librarian
-  root :to => "students#index"
+  root :to => "student_home#index"
 
   resources :book_audits
   resources :books
