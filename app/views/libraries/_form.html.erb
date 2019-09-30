@@ -1,0 +1,35 @@
+<%= render 'shared/errors', obj: @library %>
+
+<%= form_with(model: library, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :university %>
+    <%= form.text_field :university %>
+  </div>
+
+  <div class="field">
+    <%= form.label :location %>
+    <%= form.text_area :location %>
+  </div>
+
+  <div class="field">
+    <%= form.label :max_borrow_count %>
+    <%= form.number_field :max_borrow_count %>
+  </div>
+
+
+
+  <div class="field">
+    <%= form.label :fine %>
+    <%= form.text_field :fine %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

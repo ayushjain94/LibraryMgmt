@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isbn: MyString
+  title: MyString
+  author: MyString
+  is_available: false
+  language: MyString
+  publish_date: 2019-09-27
+  edition: MyString
+  image: MyString
+  subject: MyString
+  summary: MyString
+  is_special: false
+  library: one
+  is_active: false
+  issued_date: 2019-09-26
+  returned_date: 2019-09-26
+  student: one
+  book: one
+
+two:
+  isbn: MyString
+  title: MyString
+  author: MyString
+  is_available: false
+  language: MyString
+  publish_date: 2019-09-26
+  edition: MyString
+  image: MyString
+  subject: MyString
+  summary: MyString
+  is_special: false
+  library: two
+  is_active: false
+  issued_date: 2019-09-26
+  returned_date: 2019-09-26
+  student: two
+  book: two

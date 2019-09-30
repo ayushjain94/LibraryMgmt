@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book: one
+  student: one
+  is_approved: false
+  day_count: 1
+
+two:
+  book: two
+  student: two
+  is_approved: false
+  day_count: 1

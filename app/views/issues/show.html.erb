@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @issue.student_id %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @issue.book_id %>
+</p>
+
+<p>
+  <strong>Issued from:</strong>
+  <%= @issue.issued_from %>
+</p>
+
+<p>
+  <strong>Fine:</strong>
+  <%= @issue.fine %>
+</p>
+
+<p>
+  <strong>Due date:</strong>
+  <%= @issue.due_date %>
+</p>
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>

@@ -1,0 +1,84 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Isbn:</strong>
+  <%= @book_audit.isbn %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @book_audit.title %>
+</p>
+
+<p>
+  <strong>Author:</strong>
+  <%= @book_audit.author %>
+</p>
+
+<p>
+  <strong>Is available:</strong>
+  <%= @book_audit.is_available %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @book_audit.language %>
+</p>
+
+<p>
+  <strong>Publish date:</strong>
+  <%= @book_audit.publish_date %>
+</p>
+
+<p>
+  <strong>Edition:</strong>
+  <%= @book_audit.edition %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @book_audit.image %>
+</p>
+
+<p>
+  <strong>Subject:</strong>
+  <%= @book_audit.subject %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @book_audit.summary %>
+</p>
+
+<p>
+  <strong>Is special:</strong>
+  <%= @book_audit.is_special %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @book_audit.book_id %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @book_audit.is_active %>
+</p>
+
+<p>
+  <strong>Issued date:</strong>
+  <%= @book_audit.issued_date %>
+</p>
+
+<p>
+  <strong>Returned date:</strong>
+  <%= @book_audit.returned_date %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @book_audit.student_id %>
+</p>
+
+<%= link_to 'Edit', edit_book_audit_path(@book_audit) %> |
+<%= link_to 'Back', book_audits_path %>

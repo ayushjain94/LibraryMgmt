@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Educational level:</strong>
+  <%= @degree_to_book_mapping.educational_level %>
+</p>
+
+<p>
+  <strong>Book count:</strong>
+  <%= @degree_to_book_mapping.book_count %>
+</p>
+
+<%= link_to 'Edit', edit_degree_to_book_mapping_path(@degree_to_book_mapping) %> |
+<%= link_to 'Back', degree_to_book_mappings_path %>

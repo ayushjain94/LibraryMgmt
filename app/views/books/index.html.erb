@@ -1,0 +1,75 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Books</h1>
+<%= javascript_include_tag('test.js') %>
+
+<%= form_tag("", :method => "get",
+             class: 'navbar-form navbar-left') do %>
+  <div class="input-group">
+    <%= search_field_tag :search, params[:search], placeholder: "Search", class: "form-control" %>
+    <div class="input-group-btn">
+      <%= button_tag "", :class => 'btn btn-info glyphicon glyphicon-search', :name => nil %>
+    </div>
+  </div>
+<% end %>
+
+
+
+<table class="table table-hover row-clickable">
+  <thead>
+  <tr>
+    <th>Isbn</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Is available</th>
+    <th>Language</th>
+    <th>Publish date</th>
+    <th>Edition</th>
+    <th>Image</th>
+    <th>Subject</th>
+    <th>Summary</th>
+    <th>Is special</th>
+    <th>Is active</th>
+    <th>Count</th>
+    <th>Library</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+
+  <tbody>
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.isbn %></td>
+      <td><%= book.title %></td>
+      <td><%= book.author %></td>
+      <td><%= book.is_available %></td>
+      <td><%= book.language %></td>
+      <td><%= book.publish_date %></td>
+      <td><%= book.edition %></td>
+      <td><%= image_tag book.image.url, width: '100%' if book.image.present?%></td>
+      <td><%= book.subject %></td>
+      <td><%= book.summary %></td>
+      <td><%= book.is_special %></td>
+      <td><%= book.is_active %></td>
+      <td><%= book.count %></td>
+      <td><%= book.library_id %></td>
+      <td><%= link_to 'Show', book %></td>
+      <td><%= link_to 'Edit', edit_book_path(book) %></td>
+      <td><%= link_to 'Check Out', books_check_path(book), method: :post %></td>
+      <td><%= link_to 'Bookmark', books_bookmark_path(book), method: :post %></td>
+      <td><%= link_to 'Destroy', book, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Book', new_book_path %>
+
+<script>
+  function myTestFunc(id){
+    console.log(id);
+  }
+</script>

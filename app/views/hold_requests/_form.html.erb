@@ -1,0 +1,28 @@
+<%= render 'shared/errors', obj: @hold_request %>
+
+<%= form_with(model: hold_request, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :book_id %>
+    <%= form.text_field :book_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :is_approved %>
+    <%= form.check_box :is_approved %>
+  </div>
+
+  <div class="field">
+    <%= form.label :day_count %>
+    <%= form.number_field :day_count %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

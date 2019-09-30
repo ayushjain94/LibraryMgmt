@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @student.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @student.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @student.password %>
+</p>
+
+<p>
+  <strong>Degree to book mapping:</strong>
+  <%= @student.degree_to_book_mappings_id %>
+</p>
+
+<p>
+  <strong>University:</strong>
+  <%= @student.university %>
+</p>
+
+<p>
+  <strong>Fine due:</strong>
+  <%= @student.fine_due %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @student.is_active %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

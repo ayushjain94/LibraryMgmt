@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @hold_request.book_id %>
+</p>
+
+<p>
+  <strong>Student:</strong>
+  <%= @hold_request.student_id %>
+</p>
+
+<p>
+  <strong>Is approved:</strong>
+  <%= @hold_request.is_approved %>
+</p>
+
+<p>
+  <strong>Day count:</strong>
+  <%= @hold_request.day_count %>
+</p>
+
+<%= link_to 'Edit', edit_hold_request_path(@hold_request) %> |
+<%= link_to 'Back', hold_requests_path %>

@@ -1,0 +1,2 @@
+module DegreeToBookMappingsHelper
+end

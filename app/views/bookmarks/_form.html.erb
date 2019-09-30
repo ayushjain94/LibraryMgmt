@@ -1,0 +1,18 @@
+<%= render 'shared/errors', obj: @bookmark%>
+
+<%= form_with(model: bookmark, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :book_id %>
+    <%= form.text_field :book_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+<h1>Students</h1>
+
+<table class="table table-striped">
+    <thead>
+    
+    <td>Email</td>
+    <td>Approve</td>
+    
+    </thead>
+    <tbody>
+    <% @show_students.each do |users| %>
+      <tr>
+        <td><%= users.email %></td>
+        <td><a href="/students//<%= users.id %>">Edit</a></td>
+        
+      </tr>
+    <% end %>
+    </tbody>
+  </table>

@@ -1,0 +1,18 @@
+<%= render 'shared/errors', obj: @degree_to_book_mapping %>
+
+<%= form_with(model: degree_to_book_mapping, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :educational_level %>
+    <%= form.text_field :educational_level %>
+  </div>
+
+  <div class="field">
+    <%= form.label :book_count %>
+    <%= form.number_field :book_count %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

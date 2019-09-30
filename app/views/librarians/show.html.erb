@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @librarian.email %>
+</p>
+
+<p>
+  <strong>Password:</strong>
+  <%= @librarian.password %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @librarian.name %>
+</p>
+
+<p>
+  <strong>Library:</strong>
+  <%= @librarian.library_id %>
+</p>
+
+<p>
+  <strong>Is approved:</strong>
+  <%= @librarian.is_approved %>
+</p>
+
+<p>
+  <strong>Is active:</strong>
+  <%= @librarian.is_active %>
+</p>
+
+<p>
+  <strong>Boolean:</strong>
+  <%= @librarian.boolean %>
+</p>
+
+<%= link_to 'Edit', edit_librarian_path(@librarian) %> |
+<%= link_to 'Back', librarians_path %>

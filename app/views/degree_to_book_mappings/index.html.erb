@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Degree To Book Mappings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Educational level</th>
+      <th>Book count</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @degree_to_book_mappings.each do |degree_to_book_mapping| %>
+      <tr>
+        <td><%= degree_to_book_mapping.educational_level %></td>
+        <td><%= degree_to_book_mapping.book_count %></td>
+        <td><%= link_to 'Show', degree_to_book_mapping %></td>
+        <td><%= link_to 'Edit', edit_degree_to_book_mapping_path(degree_to_book_mapping) %></td>
+        <td><%= link_to 'Destroy', degree_to_book_mapping, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Degree To Book Mapping', new_degree_to_book_mapping_path %>

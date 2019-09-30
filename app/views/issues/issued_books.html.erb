@@ -1,0 +1,23 @@
+<% student_id = params["id"].to_i %>
+<% student_name = Student.find(student_id).name %>
+
+<%= issued_books_array = Issue.find_by student_id: student_id %>
+
+<h1 class="text-center">Issued Books for <%= student_name %></h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Book Name</th>
+    <th>Library Name</th>
+    <th>Issued from</th>
+    <th>Fine</th>
+    <th>Due date</th>
+  </tr>
+  </thead>
+
+  <tbody>
+<!--    Functionality yet to implement-->
+  </tbody>
+</table>
+

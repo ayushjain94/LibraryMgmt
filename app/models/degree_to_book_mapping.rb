@@ -1,0 +1,2 @@
+class DegreeToBookMapping < ApplicationRecord
+end

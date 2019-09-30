@@ -1,0 +1,19 @@
+<h1> Librarians</h1>
+
+<table class="table table-striped">
+    <thead>
+    
+    <td>Email</td>
+    <td>Approve</td>
+    
+    </thead>
+    <tbody>
+    <% @pending_librarians.each do |users| %>
+      <tr>
+        <td><%= users.email %></td>
+        <td><a href="/approve_librarian/<%= users.id %>">Approve</a></td>
+
+      </tr>
+    <% end %>
+    </tbody>
+  </table>

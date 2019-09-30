@@ -1,0 +1,43 @@
+<%= render 'shared/errors', obj: @issue %>
+
+<%= form_with(model: issue, local: true) do |form| %>
+
+  <div class="field">
+    <%= form.label :student_id %>
+    <%= form.text_field :student_id %>
+  </div>
+
+  <%= render "/books/index" %>
+
+<!--  <div class="field">-->
+    <%#= form.label :book_id %>
+    <%#= form.text_field :book_id %>
+    <%#= submit_tag 'Lookup' %>
+<!--    <button onclick="location.href = '/books';" id="myButton" class="float-left">Lookup</button>-->
+<!--  </div>-->
+
+  <form method="post" class="button_to">
+<!--    Book <%#= search_field_tag :search, params[:search] %>-->
+    <%= link_to 'Look up books', books_path %>
+    <%#= link_to 'Sign up', :controller => "books", :action => "search", :search => params[:search] %>
+  </form>
+
+  <div class="field">
+    <%= form.label :issued_from %>
+    <%= form.date_select :issued_from %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fine %>
+    <%= form.text_field :fine %>
+  </div>
+
+  <div class="field">
+    <%= form.label :due_date %>
+    <%= form.date_select :due_date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

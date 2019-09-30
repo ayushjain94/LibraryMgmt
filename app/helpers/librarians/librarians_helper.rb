@@ -1,0 +1,2 @@
+module Librarians::LibrariansHelper
+end
