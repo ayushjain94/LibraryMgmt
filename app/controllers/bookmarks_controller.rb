@@ -4,7 +4,12 @@ class BookmarksController < ApplicationController
   # GET /bookmarks
   # GET /bookmarks.json
   def index
-    @bookmarks = Bookmark.all
+    if current_student.nil?
+      @id = ''
+    else
+      @id = (Student.find_by email: current_student.email).id
+    end
+    @bookmarks = Bookmark.where(student_id: @id)
   end
 
   # GET /bookmarks/1
@@ -62,13 +67,14 @@ class BookmarksController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_bookmark
-      @bookmark = Bookmark.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def bookmark_params
-      params.require(:bookmark).permit(:student_id, :book_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_bookmark
+    @bookmark = Bookmark.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def bookmark_params
+    params.require(:bookmark).permit(:student_id, :book_id)
+  end
 end

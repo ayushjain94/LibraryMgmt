@@ -1,0 +1,26 @@
+<br><h3>HOLD REQUESTS</h3><br>
+
+<table class="table table-striped">
+  <thead>
+
+  <td>Student ID</td>
+  <td>Name</td>
+  <td>Email</td>
+  <td>ISBN</td>
+  <td>Approve</td>
+
+  </thead>
+  <tbody>
+  <% @pending_hreq.each do |req| %>
+  <% book = Book.find(req.book_id)%>
+  <% student = Student.find(req.student_id) %>
+    <tr>
+      <td><%= req.student_id %></td>
+      <td><%= student.name %></td>
+      <td><%= student.email %></td>
+      <td><%= book.isbn %></td>
+      <td><a href="/approve_holdrequest/<%= req.id %>">Approve</a></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

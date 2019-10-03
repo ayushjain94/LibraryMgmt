@@ -7,6 +7,15 @@ class HoldRequestsController < ApplicationController
     @hold_requests = HoldRequest.all
   end
 
+  def approve_holdrequest
+    hreq_id = params[:id]
+    hreq_obj = HoldRequest.where(id: hreq_id).first
+    hreq_obj.is_approved = true
+    hreq_obj.save
+    # redirect_to('/admin_home/holdrequestapprovals')
+    redirect_to books_admin_check_out_path(param_1: hreq_obj.student_id, param_2: hreq_obj.book_id)
+  end
+
   # GET /hold_requests/1
   # GET /hold_requests/1.json
   def show
@@ -62,13 +71,14 @@ class HoldRequestsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_hold_request
-      @hold_request = HoldRequest.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def hold_request_params
-      params.require(:hold_request).permit(:book_id, :student_id, :is_approved, :day_count)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_hold_request
+    @hold_request = HoldRequest.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def hold_request_params
+    params.require(:hold_request).permit(:book_id, :student_id, :is_approved, :day_count)
+  end
 end

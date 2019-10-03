@@ -1,15 +1,38 @@
 class IssuesController < ApplicationController
-  before_action :set_issue, only: [:show, :edit, :update, :destroy]
+  before_action :set_issue, only: [:show, :edit, :update, :destroy, :return]
 
   # GET /issues
   # GET /issues.json
   def index
-    @issues = Issue.all
+    if current_student.nil?
+      @id = ''
+    else
+      @id = (Student.find_by email: current_student.email).id
+    end
+    @issues = Issue.where(student_id: @id)
   end
 
   # GET /issues/1
   # GET /issues/1.json
   def show
+  end
+
+  def return
+    @book = Book.find(@issue.book_id)
+    @book.count = @book.count + 1
+    @book_audit = BookAudit.find_by book_id: @issue.book_id
+    @book_audit.returned_date = Date.today
+
+    respond_to do |format|
+      if @book_audit.save && @book.save && @issue.destroy
+        format.html { redirect_to @issue, notice: 'Book was successfully returned.' }
+        format.json { render :show, status: :created, location: @book_audit }
+      else
+        format.html { render student_home_path }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
+    end
+
   end
 
   # GET /issues/new
@@ -61,18 +84,15 @@ class IssuesController < ApplicationController
     end
   end
 
-  def get_issued_books
-    render 'issues/issued_books'
+  private
+
+  # Use callbacks to share common setup or constraints between actions.
+  def set_issue
+    @issue = Issue.find(params[:id])
   end
 
-  private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_issue
-      @issue = Issue.find(params[:id])
-    end
-
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def issue_params
-      params.require(:issue).permit(:student_id, :book_id, :issued_from, :fine, :due_date)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def issue_params
+    params.require(:issue).permit(:student_id, :book_id, :issued_from, :fine, :due_date)
+  end
 end

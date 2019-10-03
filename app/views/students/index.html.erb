@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Email</th>
       <th>Password</th>
-      <th>Degree to book mapping</th>
+      <th>Educational Level</th>
       <th>University</th>
       <th>Fine due</th>
       <th>Is active</th>
@@ -18,15 +18,16 @@
 
   <tbody>
     <% @students.each do |student| %>
+     <% @education = DegreeToBookMapping.find(student.degree_to_book_mappings_id).educational_level %>
       <tr>
         <td><%= student.name %></td>
         <td><%= student.email %></td>
         <td><%= student.password %></td>
-        <td><%= student.degree_to_book_mappings_id %></td>
+        <td><%= @education %></td>
         <td><%= student.university %></td>
         <td><%= student.fine_due %></td>
         <td><%= student.is_active %></td>
-        <td><%= link_to 'Show', student %></td>
+        <td><%= link_to 'Show', student_session_path %></td>
         <td><%= link_to 'Edit', edit_student_path(student) %></td>
         <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -36,4 +37,4 @@
 
 <br>
 
-<%= link_to 'New Student', new_student_path %>
+<%= link_to 'New Student', new_student_session_path %>

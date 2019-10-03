@@ -17,46 +17,58 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <% if student_signed_in?%>
+
+    <% if librarian_signed_in? %>
+      <%= current_librarian.email %>
+    <% end %>
+
+    <% if student_signed_in? %>
+      <ul class="navbar-nav mr-auto">
         <%= link_to 'Student Home', student_home_path, class: "nav-link text-secondary" %>
 
         <!--Get current student id from email-->
-        <% id = (Student.find_by email: current_student.email).id%>
+        <% id = (Student.find_by email: current_student.email).id %>
 
         <!--View the books issued by the student-->
-        <%= link_to 'Issued Books', "student/" + id.to_s + "/issues", class: "nav-link text-secondary" %>
+        <%= link_to 'Issued Books', issues_path, class: "nav-link text-secondary" %>
 
         <!--Get the list of bookmarks for the current student -->
+        <%= link_to 'Bookmarks', bookmarks_path, class: "nav-link text-secondary" %>
 
+        <%= link_to 'Books', books_path, class: "nav-link text-secondary" %>
+
+        <!--Get the list of hold requests for the current student -->
+        <%= link_to 'Requests', hold_requests_path, class: "nav-link text-secondary" %>
         <!-- Logged in message -->
-        <%= link_to "Logged in as #{current_student.email}", "javascript:void(0)", class: "nav-link text-secondary"%>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= current_student.email %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to "Edit Profile", edit_student_registration_path, class: "dropdown-item" %>
+            <%= link_to "Logout", destroy_student_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+    <% end %>
 
-        <!-- Logout Button -->
-        <%= link_to "Logout", destroy_student_session_path, method: :delete, class: "nav-link text-secondary"%>
-      <% end %>
-
-      <% if librarian_signed_in? %>
-        <%= current_librarian.email %>
-      <% end %>
-
-      <% if admin_signed_in? %>
-        <%= current_admin.email %>
-      <% end %>
-
-      <!--        <li class="nav-item">-->
-      <%#= link_to 'Students', {controller: 'students', action: 'index'}, class: "nav-link" %>
-      <!--        </li>-->
-      <!--        <li class="nav-item">-->
-      <%#= link_to 'Libraries', {controller: 'libraries', action: 'index'}, class: "nav-link" %>
-      <!--        </li>-->
-      <!--        <li class="nav-item">-->
-      <%#= link_to 'Librarians', {controller: 'librarians', action: 'index'}, class: "nav-link" %>
-      <!--        </li>-->
-      <!--        <li class="nav-item">-->
-      <%#= link_to 'Books', {controller: 'books', action: 'index'}, class: "nav-link" %>
-      <!--        </li>-->
-    </ul>
+    <% if admin_signed_in? %>
+      <%= current_admin.email %>
+    <% end %>
+    <!--        <li class="nav-item">-->
+    <%#= link_to 'Students', {controller: 'students', action: 'index'}, class: "nav-link" %>
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <%#= link_to 'Libraries', {controller: 'libraries', action: 'index'}, class: "nav-link" %>
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <%#= link_to 'Librarians', {controller: 'librarians', action: 'index'}, class: "nav-link" %>
+    <!--        </li>-->
+    <!--        <li class="nav-item">-->
+    <%#= link_to 'Books', {controller: 'books', action: 'index'}, class: "nav-link" %>
+    <!--        </li>-->
   </div>
 </nav>
 <div class="container">

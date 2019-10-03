@@ -1,33 +1,34 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Hold Requests</h1>
+<h3>HOLD REQUESTS</h3>
 
-<table>
+<table class="table table-hover row-clickable">
   <thead>
-    <tr>
-      <th>Book</th>
-      <th>Student</th>
-      <th>Is approved</th>
-      <th>Day count</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>ISBN</th>
+    <th>Name</th>
+    <th>Author</th>
+    <th>Subject</th>
+    <th>Image</th>
+    <th>Pending since days</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @hold_requests.each do |hold_request| %>
-      <tr>
-        <td><%= hold_request.book_id %></td>
-        <td><%= hold_request.student_id %></td>
-        <td><%= hold_request.is_approved %></td>
-        <td><%= hold_request.day_count %></td>
-        <td><%= link_to 'Show', hold_request %></td>
-        <td><%= link_to 'Edit', edit_hold_request_path(hold_request) %></td>
-        <td><%= link_to 'Destroy', hold_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <% @hold_requests.each do |hold_request| %>
+    <% book = Book.find(hold_request.book_id) %>
+    <tr>
+      <td><%= book.isbn %></td>
+      <td><%= book.title %></td>
+      <td><%= book.author %></td>
+      <td><%= book.subject %></td>
+      <td><%= image_tag book.image.url, width: '100px' if book.image.present? %></td>
+      <td><%= ((Time.now - hold_request.created_at) / 24.hours).to_i %></td>
+      <td><%= link_to 'Delete', hold_request, method: :delete, data: {confirm: 'Are you sure?'} %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Hold Request', new_hold_request_path %>

@@ -1,29 +1,45 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Bookmarks</h1>
+<h3>BOOKMARKS</h3>
 
-<table>
+<table class="table table-hover text-center row-clickable">
   <thead>
-    <tr>
-      <th>Student</th>
-      <th>Book</th>
-      <th colspan="3"></th>
-    </tr>
+  <tr>
+    <th>Isbn</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Language</th>
+    <th>Publish date</th>
+    <th>Edition</th>
+    <th>Image</th>
+    <th>Subject</th>
+    <th>Summary</th>
+    <th>Is special</th>
+    <th>Library</th>
+    <th colspan="3"></th>
+  </tr>
   </thead>
 
   <tbody>
-    <% @bookmarks.each do |bookmark| %>
-      <tr>
-        <td><%= bookmark.student_id %></td>
-        <td><%= bookmark.book_id %></td>
-        <td><%= link_to 'Show', bookmark %></td>
-        <td><%= link_to 'Edit', edit_bookmark_path(bookmark) %></td>
-        <td><%= link_to 'Destroy', bookmark, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
+  <% @bookmarks.each do |bookmark| %>
+    <% book = Book.find(bookmark.book_id) %>
+    <tr>
+      <td><%= book.isbn %></td>
+      <td><%= book.title %></td>
+      <td><%= book.author %></td>
+      <td><%= book.language %></td>
+      <td><%= book.publish_date %></td>
+      <td><%= book.edition %></td>
+      <td><%= image_tag book.image.url, width: '100px' if book.image.present? %></td>
+      <td><%= book.subject %></td>
+      <td><%= book.summary %></td>
+      <td><%= book.is_special %></td>
+      <td><%= @lib %></td>
+      <td><%= link_to 'Check Out', books_student_check_out_path(book), method: :post %></td>
+      <td><%= link_to 'Unbookmark', books_unbookmark_from_bm_path(book), method: :post %></td>
+    </tr>
+  <% end %>
   </tbody>
 </table>
 
 <br>
-
-<%= link_to 'New Bookmark', new_bookmark_path %>

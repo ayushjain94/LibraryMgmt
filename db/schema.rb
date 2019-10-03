@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_29_035059) do
+ActiveRecord::Schema.define(version: 2019_09_30_042902) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,17 +90,26 @@ ActiveRecord::Schema.define(version: 2019_09_29_035059) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "hold_requests", force: :cascade do |t|
+    t.bigint "book_id", null: false
+    t.bigint "student_id", null: false
+    t.boolean "is_approved"
+    t.integer "day_count"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["book_id"], name: "index_hold_requests_on_book_id"
+    t.index ["student_id"], name: "index_hold_requests_on_student_id"
+  end
+
   create_table "issues", force: :cascade do |t|
     t.bigint "student_id", null: false
     t.bigint "book_id", null: false
-    t.bigint "library_id", null: false
     t.date "issued_from"
     t.float "fine"
     t.date "due_date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["book_id"], name: "index_issues_on_book_id"
-    t.index ["library_id"], name: "index_issues_on_library_id"
     t.index ["student_id"], name: "index_issues_on_student_id"
   end
 
@@ -158,8 +167,9 @@ ActiveRecord::Schema.define(version: 2019_09_29_035059) do
   add_foreign_key "bookmarks", "libraries"
   add_foreign_key "bookmarks", "students"
   add_foreign_key "books", "libraries"
+  add_foreign_key "hold_requests", "books"
+  add_foreign_key "hold_requests", "students"
   add_foreign_key "issues", "books"
-  add_foreign_key "issues", "libraries"
   add_foreign_key "issues", "students"
   add_foreign_key "librarians", "libraries"
   add_foreign_key "students", "degree_to_book_mappings", column: "degree_to_book_mappings_id"

@@ -1,7 +1,8 @@
 class AdminHomeController < ApplicationController
   before_action :authenticate_admin!
+
   def index
-    
+
   end
 
   def showstudents
@@ -12,4 +13,7 @@ class AdminHomeController < ApplicationController
     @pending_librarians = Librarian.where(approved: nil)
   end
 
+  def holdrequestapprovals
+    @pending_hreq = HoldRequest.where(is_approved: false)
+  end
 end

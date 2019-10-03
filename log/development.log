@@ -14670,595 +14670,130 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.3ms | Allocations: 7170)
 
 
-Started GET "/" for ::1 at 2019-09-29 23:17:50 -0400
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 9ms (ActiveRecord: 0.0ms | Allocations: 1672)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:17:50 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 2.5ms | Allocations: 659)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 15.1ms | Allocations: 4041)
-  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
-Completed 200 OK in 43ms (Views: 32.0ms | ActiveRecord: 0.8ms | Allocations: 19327)
-
-
-Started GET "/" for ::1 at 2019-09-29 23:17:53 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:17:53 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1101)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 4667)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:17:55 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.4ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1092)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.0ms | Allocations: 4649)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:17:55 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1091)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 9ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4643)
-
-
-Started GET "/" for ::1 at 2019-09-29 23:17:58 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 341)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:17:58 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1092)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 4650)
-
-
-Started GET "/" for ::1 at 2019-09-29 23:18:00 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 334)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:18:00 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1092)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 4645)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:18:02 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1091)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms | Allocations: 4637)
-
-
-Started GET "/students" for ::1 at 2019-09-29 23:18:04 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 333)
-
-
-Started GET "/students/sign_up" for ::1 at 2019-09-29 23:18:05 -0400
-Processing by Students::RegistrationsController#new as HTML
-  Rendering students/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.9ms | Allocations: 219)
-  [1m[36mDegreeToBookMapping Load (0.2ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/students/registrations/new.html.erb:32:in `collect'
-  Rendered students/shared/_links.html.erb (Duration: 1.3ms | Allocations: 546)
-  Rendered students/registrations/new.html.erb within layouts/application (Duration: 12.0ms | Allocations: 5514)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 44ms (Views: 18.2ms | ActiveRecord: 1.7ms | Allocations: 19742)
-
-
-Started GET "/degree_to_book_mappings" for ::1 at 2019-09-29 23:18:10 -0400
-Processing by DegreeToBookMappingsController#index as HTML
-  Rendering degree_to_book_mappings/index.html.erb within layouts/application
-  [1m[36mDegreeToBookMapping Load (0.1ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/degree_to_book_mappings/index.html.erb:15
-  Rendered degree_to_book_mappings/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 917)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
-Completed 200 OK in 14ms (Views: 11.0ms | ActiveRecord: 0.1ms | Allocations: 4947)
-
-
-Started GET "/degree_to_book_mappings/new" for ::1 at 2019-09-29 23:18:12 -0400
-Processing by DegreeToBookMappingsController#new as HTML
-  Rendering degree_to_book_mappings/new.html.erb within layouts/application
-  Rendered shared/_errors.html.erb (Duration: 0.7ms | Allocations: 223)
-  Rendered degree_to_book_mappings/_form.html.erb (Duration: 4.2ms | Allocations: 1861)
-  Rendered degree_to_book_mappings/new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2224)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 19ms (Views: 12.3ms | ActiveRecord: 0.3ms | Allocations: 8759)
-
-
-Started POST "/degree_to_book_mappings" for ::1 at 2019-09-29 23:18:15 -0400
-Processing by DegreeToBookMappingsController#create as HTML
-  Parameters: {"authenticity_token"=>"gzTr49ISMKoFRUJ2vg+96EQWFhboaSsCReb/+QJ4WxQeaMZpnEVb0yJLEs0ovBOBtlWPlL5xVCo6S10LBV7n7A==", "degree_to_book_mapping"=>{"educational_level"=>"Masters", "book_count"=>"1"}, "commit"=>"Create Degree to book mapping"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  ↳ app/controllers/degree_to_book_mappings_controller.rb:30:in `block in create'
-  [1m[36mDegreeToBookMapping Create (0.5ms)[0m  [1m[32mINSERT INTO "degree_to_book_mappings" ("educational_level", "book_count", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["educational_level", "Masters"], ["book_count", 1], ["created_at", "2019-09-30 03:18:15.544158"], ["updated_at", "2019-09-30 03:18:15.544158"]]
-  ↳ app/controllers/degree_to_book_mappings_controller.rb:30:in `block in create'
-  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
-  ↳ app/controllers/degree_to_book_mappings_controller.rb:30:in `block in create'
-Redirected to http://localhost:3000/degree_to_book_mappings/1
-Completed 302 Found in 6ms (ActiveRecord: 1.4ms | Allocations: 2861)
-
-
-Started GET "/degree_to_book_mappings/1" for ::1 at 2019-09-29 23:18:15 -0400
-Processing by DegreeToBookMappingsController#show as HTML
-  Parameters: {"id"=>"1"}
-  [1m[36mDegreeToBookMapping Load (0.2ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings" WHERE "degree_to_book_mappings"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/controllers/degree_to_book_mappings_controller.rb:67:in `set_degree_to_book_mapping'
-  Rendering degree_to_book_mappings/show.html.erb within layouts/application
-  Rendered degree_to_book_mappings/show.html.erb within layouts/application (Duration: 1.1ms | Allocations: 288)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
-Completed 200 OK in 10ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 4970)
-
-
-Started GET "/degree_to_book_mappings" for ::1 at 2019-09-29 23:18:16 -0400
-Processing by DegreeToBookMappingsController#index as HTML
-  Rendering degree_to_book_mappings/index.html.erb within layouts/application
-  [1m[36mDegreeToBookMapping Load (0.2ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/degree_to_book_mappings/index.html.erb:15
-  Rendered degree_to_book_mappings/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 762)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
-Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 4024)
-
-
-Started GET "/students/sign_up" for ::1 at 2019-09-29 23:18:19 -0400
-Processing by Students::RegistrationsController#new as HTML
-  Rendering students/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
-  [1m[36mDegreeToBookMapping Load (0.4ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/students/registrations/new.html.erb:32:in `collect'
-  Rendered students/shared/_links.html.erb (Duration: 0.3ms | Allocations: 79)
-  Rendered students/registrations/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2819)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 16ms (Views: 14.1ms | ActiveRecord: 0.4ms | Allocations: 6298)
-
-
-Started POST "/students" for ::1 at 2019-09-29 23:18:40 -0400
-Processing by Students::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"Ln/0eqGZobKyoQlbWfNEr1QNmNLUNJYtEHy2Mo9gjtrXNE0s6iphrEuYgZGO/2FYR7uzbZjorzN2seYsvEFSKw==", "student"=>{"email"=>"jn.ayush@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"AJ", "degree_to_book_mappings_id"=>"1", "university"=>"NCSU", "fine_due"=>"10", "is_active"=>"1"}, "commit"=>"Sign up"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."email" = ? LIMIT ?[0m  [["email", "jn.ayush@gmail.com"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
-  Rendering students/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 303)
-  [1m[36mDegreeToBookMapping Load (0.1ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/students/registrations/new.html.erb:32:in `collect'
-  Rendered students/shared/_links.html.erb (Duration: 0.1ms | Allocations: 78)
-  Rendered students/registrations/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3124)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 140ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 17962)
-
-
-Started POST "/students" for ::1 at 2019-09-29 23:24:11 -0400
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-Processing by Students::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"Ln/0eqGZobKyoQlbWfNEr1QNmNLUNJYtEHy2Mo9gjtrXNE0s6iphrEuYgZGO/2FYR7uzbZjorzN2seYsvEFSKw==", "student"=>{"email"=>"jn.ayush@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"AJ", "degree_to_book_mappings_id"=>"1", "university"=>"NCSU", "fine_due"=>"10", "is_active"=>"1"}, "commit"=>"Sign up"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mStudent Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."email" = ? LIMIT ?[0m  [["email", "jn.ayush@gmail.com"], ["LIMIT", 1]]
-  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
-  Rendering students/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.4ms | Allocations: 290)
-  [1m[36mDegreeToBookMapping Load (0.1ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/students/registrations/new.html.erb:32:in `collect'
-  Rendered students/shared/_links.html.erb (Duration: 0.2ms | Allocations: 78)
-  Rendered students/registrations/new.html.erb within layouts/application (Duration: 4.4ms | Allocations: 3121)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 139ms (Views: 21.3ms | ActiveRecord: 0.3ms | Allocations: 12217)
-
-
-Started GET "/students" for ::1 at 2019-09-29 23:31:45 -0400
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 1411)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:31:45 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 147)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1119)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 18ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 11537)
-
-
-Started GET "/admins/sign_up" for ::1 at 2019-09-29 23:31:47 -0400
-Processing by Admins::RegistrationsController#new as HTML
-  Rendering admins/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
-  Rendered admins/shared/_links.html.erb (Duration: 0.3ms | Allocations: 125)
-  Rendered admins/registrations/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1581)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms | Allocations: 5767)
-
-
-Started GET "/admins/sign_up" for ::1 at 2019-09-29 23:31:53 -0400
-Processing by Admins::RegistrationsController#new as HTML
-  Rendering admins/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
-  Rendered admins/shared/_links.html.erb (Duration: 0.4ms | Allocations: 78)
-  Rendered admins/registrations/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1111)
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
-Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 4579)
-
-
-Started GET "/" for ::1 at 2019-09-29 23:32:00 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms | Allocations: 335)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-29 23:32:00 -0400
-Processing by Admins::SessionsController#new as HTML
-  Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 0.5ms | Allocations: 134)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1100)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 4655)
-
-
-Started GET "/students" for ::1 at 2019-09-29 23:32:03 -0400
-Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
-
-
-Started GET "/students/sign_up" for ::1 at 2019-09-29 23:32:07 -0400
-Processing by Students::RegistrationsController#new as HTML
-  Rendering students/registrations/new.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
-  [1m[36mDegreeToBookMapping Load (0.2ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
-  ↳ app/views/students/registrations/new.html.erb:32:in `collect'
-  Rendered students/shared/_links.html.erb (Duration: 0.4ms | Allocations: 90)
-  Rendered students/registrations/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 6243)
-  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
-Completed 200 OK in 33ms (Views: 19.9ms | ActiveRecord: 0.2ms | Allocations: 18915)
-
-
-Started POST "/students" for ::1 at 2019-09-29 23:32:29 -0400
-Processing by Students::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"tKVKiI1Bx1fdSZ9D9f0anmtpX/di7W6yvfVd2YMA3z1N7vPexvIHSSRwF4ki8T9peN90SC4xV6zbOA3HsCEDzA==", "student"=>{"email"=>"cha@ncsu.edu", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"AK", "degree_to_book_mappings_id"=>"1", "university"=>"NCSU", "fine_due"=>"100", "is_active"=>"0"}, "commit"=>"Sign up"}
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mStudent Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."email" = ? LIMIT ?[0m  [["email", "cha@ncsu.edu"], ["LIMIT", 1]]
-  [1m[36mStudent Create (0.4ms)[0m  [1m[32mINSERT INTO "students" ("email", "encrypted_password", "university", "fine_due", "is_active", "created_at", "updated_at", "name", "degree_to_book_mappings_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "cha@ncsu.edu"], ["encrypted_password", "$2a$11$Y6hmWyd56J4HFoxlBgKb9etrrxUlc1EE3h6w8FJLOf9sZxIsmAyqC"], ["university", "NCSU"], ["fine_due", 100.0], ["is_active", 0], ["created_at", "2019-09-30 03:32:29.967340"], ["updated_at", "2019-09-30 03:32:29.967340"], ["name", "AK"], ["degree_to_book_mappings_id", 1]]
-  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
-Redirected to http://localhost:3000/students/edit
-Completed 302 Found in 122ms (ActiveRecord: 2.3ms | Allocations: 7295)
-
-
-Started GET "/students/edit" for ::1 at 2019-09-29 23:32:29 -0400
-Processing by Students::RegistrationsController#edit as HTML
-  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering students/registrations/edit.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
-  Rendered students/registrations/edit.html.erb within layouts/application (Duration: 4.1ms | Allocations: 2733)
-Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 9708)
-
-
-  
-ActionView::Template::Error (No route matches {:action=>"index", :controller=>"students/student_home"}):
-    19:   <div class="collapse navbar-collapse" id="navbarNav">
-    20:     <ul class="navbar-nav">
-    21:       <% if student_signed_in?%>
-    22:         <%= link_to 'Student Home', {controller: 'student_home', action: 'index'}, class: "nav-link text-secondary" %>
-    23: 
-    24:         <!--Get current student id from email-->
-    25:         <% id = (Student.find_by email: current_student.email).id%>
-  
-app/views/layouts/application.html.erb:22
-Started GET "/students/edit" for ::1 at 2019-09-29 23:33:36 -0400
-Processing by Students::RegistrationsController#edit as HTML
-  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering students/registrations/edit.html.erb within layouts/application
-  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 210)
-  Rendered students/registrations/edit.html.erb within layouts/application (Duration: 5.3ms | Allocations: 3096)
-  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = ? LIMIT ?[0m  [["email", "cha@ncsu.edu"], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:25
-  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 90)
-Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.4ms | Allocations: 11072)
-
-
-Started GET "/student_home" for ::1 at 2019-09-29 23:33:40 -0400
-Processing by StudentHomeController#index as HTML
-  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = ? ORDER BY "students"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
-  Rendering student_home/index.html.erb within layouts/application
-  Rendered student_home/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 88)
-  [1m[36mStudent Load (0.1ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = ? LIMIT ?[0m  [["email", "cha@ncsu.edu"], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:25
-  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
-Completed 200 OK in 12ms (Views: 8.0ms | ActiveRecord: 0.4ms | Allocations: 6087)
-
-
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
-  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to DeviseCreateStudents (20190927070423)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "educational_level" varchar, "university" varchar, "fine_due" float, "is_active" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_students_on_email" ON "students" ("email")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_students_on_reset_password_token" ON "students" ("reset_password_token")[0m
-  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927070423"]]
-  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-Migrating to DeviseCreateLibrarians (20190927072442)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "librarians" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "library_id" integer NOT NULL, "is_approved" boolean, "is_active" varchar, "boolean" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_35cb864df3"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_librarians_on_library_id" ON "librarians" ("library_id")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_librarians_on_email" ON "librarians" ("email")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_librarians_on_reset_password_token" ON "librarians" ("reset_password_token")[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927072442"]]
-  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-Migrating to DeviseCreateAdmins (20190927073047)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "admins" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "name" varchar, "is_active" boolean, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_email" ON "admins" ("email")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_admins_on_reset_password_token" ON "admins" ("reset_password_token")[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927073047"]]
-  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
-Migrating to AddNameToStudent (20190927073120)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "students" ADD "name" varchar[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927073120"]]
-  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateDegreeToBookMappings (20190927073459)
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "degree_to_book_mappings" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "educational_level" varchar, "book_count" integer, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927073459"]]
-  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateBookmarks (20190927090701)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "student_id" integer NOT NULL, "book_id" integer NOT NULL, "library_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_f5c21bfb00"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-, CONSTRAINT "fk_rails_ecb780aac3"
-FOREIGN KEY ("book_id")
-  REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_1ebe5dc9d4"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_bookmarks_on_student_id" ON "bookmarks" ("student_id")[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_bookmarks_on_book_id" ON "bookmarks" ("book_id")[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_bookmarks_on_library_id" ON "bookmarks" ("library_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927090701"]]
-  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateIssues (20190927091440)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "issues" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "student_id" integer NOT NULL, "book_id" integer NOT NULL, "library_id" integer NOT NULL, "issued_from" date, "fine" float, "due_date" date, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_ea791380de"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-, CONSTRAINT "fk_rails_c26e9b9220"
-FOREIGN KEY ("book_id")
-  REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_342337f04d"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_issues_on_student_id" ON "issues" ("student_id")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_issues_on_book_id" ON "issues" ("book_id")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_issues_on_library_id" ON "issues" ("library_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190927091440"]]
-  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateLibraries (20190928010056)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "libraries" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "university" varchar, "location" text, "max_borrow_count" integer, "fine" float, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928010056"]]
-  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateBooks (20190928055010)
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "books" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "author" varchar, "is_available" boolean, "language" varchar, "publish_date" date, "edition" varchar, "image" varchar, "subject" varchar, "summary" varchar, "is_special" boolean, "is_active" boolean, "count" integer, "library_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_9bb3dacd9b"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_books_on_library_id" ON "books" ("library_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928055010"]]
-  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
-Migrating to AddApprovedToLibrarian (20190928064312)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "librarians" ADD "approved" boolean[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928064312"]]
-  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
-Migrating to AddDegreeToBookMappingIdToStudent (20190928070835)
-  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.7ms)[0m  [1m[35mALTER TABLE "students" ADD "degree_to_book_mappings_id" integer[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE  INDEX "index_students_on_degree_to_book_mappings_id" ON "students" ("degree_to_book_mappings_id")[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "astudents" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "educational_level" varchar DEFAULT NULL, "university" varchar DEFAULT NULL, "fine_due" float DEFAULT NULL, "is_active" boolean DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL, "degree_to_book_mappings_id" integer DEFAULT NULL)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "tindex_astudents_on_degree_to_book_mappings_id" ON "astudents" ("degree_to_book_mappings_id")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_astudents_on_reset_password_token" ON "astudents" ("reset_password_token")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_astudents_on_email" ON "astudents" ("email")[0m
-  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "astudents" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","educational_level","university","fine_due","is_active","created_at","updated_at","name","degree_to_book_mappings_id")
-                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","educational_level","university","fine_due","is_active","created_at","updated_at","name","degree_to_book_mappings_id" FROM "students"[0m
-  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "students"[0m
-  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "students" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime DEFAULT NULL, "remember_created_at" datetime DEFAULT NULL, "educational_level" varchar DEFAULT NULL, "university" varchar DEFAULT NULL, "fine_due" float DEFAULT NULL, "is_active" boolean DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "name" varchar DEFAULT NULL, "degree_to_book_mappings_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_ae5ba4f456"
-FOREIGN KEY ("degree_to_book_mappings_id")
-  REFERENCES "degree_to_book_mappings" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_students_on_email" ON "students" ("email")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_students_on_reset_password_token" ON "students" ("reset_password_token")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_students_on_degree_to_book_mappings_id" ON "students" ("degree_to_book_mappings_id")[0m
-  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "students" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","educational_level","university","fine_due","is_active","created_at","updated_at","name","degree_to_book_mappings_id")
-                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","educational_level","university","fine_due","is_active","created_at","updated_at","name","degree_to_book_mappings_id" FROM "astudents"[0m
-  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "astudents"[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
-  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
-  [1m[36mprimary::SchemaMigration Create (1.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190928070835"]]
-  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
-Migrating to CreateBookAudits (20190929035059)
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "book_audits" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "isbn" varchar, "title" varchar, "author" varchar, "is_available" boolean, "language" varchar, "publish_date" date, "edition" varchar, "image" varchar, "subject" varchar, "summary" varchar, "is_special" boolean, "book_id" integer NOT NULL, "is_active" boolean, "issued_date" date, "returned_date" date, "student_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_f19b955476"
-FOREIGN KEY ("book_id")
-  REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_18bfa99dd0"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_book_audits_on_book_id" ON "book_audits" ("book_id")[0m
-  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_book_audits_on_student_id" ON "book_audits" ("student_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20190929035059"]]
-  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
-  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-30 04:14:51.315243"], ["updated_at", "2019-09-30 04:14:51.315243"]]
-  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
-  [1m[35m (571.6ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
-  [1m[35m (384.1ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
-  [1m[35m (19.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to DeviseCreateStudents (20190927070423)
-  [1m[35m (2.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "educational_level" character varying, "university" character varying, "fine_due" float, "is_active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_students_on_email" ON "students"  ("email")[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_students_on_reset_password_token" ON "students"  ("reset_password_token")[0m
-  [1m[36mprimary::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927070423"]]
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-Migrating to DeviseCreateLibrarians (20190927072442)
-  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (5.8ms)[0m  [1m[35mCREATE TABLE "librarians" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "library_id" bigint NOT NULL, "is_approved" boolean, "is_active" character varying, "boolean" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_35cb864df3"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to DeviseCreateLibrarians (20190927072442)
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "librarians" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "library_id" bigint NOT NULL, "is_approved" boolean, "is_active" character varying, "boolean" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_35cb864df3"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  [1m[35m (242.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (220.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (554.0ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (385.1ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (262.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (235.2ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (560.1ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (417.4ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (190.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (202.5ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (419.4ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (400.2ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (197.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (202.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (415.6ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (410.6ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (20.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHoldRequests (20190926094301)
+  [1m[35m (2.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (10.0ms)[0m  [1m[35mCREATE TABLE "hold_requests" ("id" bigserial primary key, "book_id" bigint NOT NULL, "student_id" bigint NOT NULL, "is_approved" boolean, "day_count" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6f5605972d"
+FOREIGN KEY ("book_id")
+  REFERENCES "books" ("id")
+, CONSTRAINT "fk_rails_06c0bad730"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (203.9ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (202.6ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (415.4ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (405.3ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateHoldRequests (20190926094301)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (5.4ms)[0m  [1m[35mCREATE TABLE "hold_requests" ("id" bigserial primary key, "book_id" bigint NOT NULL, "student_id" bigint NOT NULL, "is_approved" boolean, "day_count" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6f5605972d"
+FOREIGN KEY ("book_id")
+  REFERENCES "books" ("id")
+, CONSTRAINT "fk_rails_06c0bad730"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
 )[0m
   [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (204.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (202.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (403.3ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (382.9ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (196.8ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_development"[0m
+  [1m[35m (202.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "libraryMgmtSys_test"[0m
+  [1m[35m (340.0ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_development" ENCODING = 'unicode'[0m
+  [1m[35m (387.1ms)[0m  [1m[35mCREATE DATABASE "libraryMgmtSys_test" ENCODING = 'unicode'[0m
+  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateStudents (20190927070423)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "students" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "educational_level" character varying, "university" character varying, "fine_due" float, "is_active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_students_on_email" ON "students"  ("email")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_students_on_reset_password_token" ON "students"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (2.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927070423"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
 Migrating to DeviseCreateAdmins (20190927073047)
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (5.6ms)[0m  [1m[35mCREATE TABLE "admins" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "is_active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "admins" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "is_active" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
   [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admins_on_email" ON "admins"  ("email")[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admins_on_reset_password_token" ON "admins"  ("reset_password_token")[0m
-  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073047"]]
-  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
-Migrating to AddNameToStudent (20190927073120)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (5.7ms)[0m  [1m[35mALTER TABLE "students" ADD "name" character varying[0m
-  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073120"]]
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_admins_on_reset_password_token" ON "admins"  ("reset_password_token")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073047"]]
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateDegreeToBookMappings (20190927073459)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (3.3ms)[0m  [1m[35mCREATE TABLE "degree_to_book_mappings" ("id" bigserial primary key, "educational_level" character varying, "book_count" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073459"]]
+Migrating to AddNameToStudent (20190927073120)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.2ms)[0m  [1m[35mALTER TABLE "students" ADD "name" character varying[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073120"]]
   [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateBookmarks (20190927090701)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (12.9ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "library_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f5c21bfb00"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-, CONSTRAINT "fk_rails_ecb780aac3"
-FOREIGN KEY ("book_id")
-  REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_1ebe5dc9d4"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
-  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to CreateIssues (20190927091440)
+Migrating to CreateDegreeToBookMappings (20190927073459)
   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "issues" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "library_id" bigint NOT NULL, "issued_from" date, "fine" float, "due_date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ea791380de"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-, CONSTRAINT "fk_rails_c26e9b9220"
-FOREIGN KEY ("book_id")
-  REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_342337f04d"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
-)[0m
-  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
-  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "degree_to_book_mappings" ("id" bigserial primary key, "educational_level" character varying, "book_count" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190927073459"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
 Migrating to CreateLibraries (20190928010056)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (3.8ms)[0m  [1m[35mCREATE TABLE "libraries" ("id" bigserial primary key, "name" character varying, "university" character varying, "location" text, "max_borrow_count" integer, "fine" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928010056"]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "libraries" ("id" bigserial primary key, "name" character varying, "university" character varying, "location" text, "max_borrow_count" integer, "fine" float, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928010056"]]
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
 Migrating to DeviseCreateLibrarians (20190928010057)
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (3.6ms)[0m  [1m[35mCREATE TABLE "librarians" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "library_id" bigint NOT NULL, "is_approved" boolean, "is_active" character varying, "boolean" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_35cb864df3"
+  [1m[35m (12.4ms)[0m  [1m[35mCREATE TABLE "librarians" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "name" character varying, "library_id" bigint NOT NULL, "is_approved" boolean, "is_active" character varying, "boolean" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_35cb864df3"
 FOREIGN KEY ("library_id")
   REFERENCES "libraries" ("id")
 )[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_librarians_on_library_id" ON "librarians"  ("library_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_librarians_on_library_id" ON "librarians"  ("library_id")[0m
   [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_librarians_on_email" ON "librarians"  ("email")[0m
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_librarians_on_reset_password_token" ON "librarians"  ("reset_password_token")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_librarians_on_reset_password_token" ON "librarians"  ("reset_password_token")[0m
   [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928010057"]]
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
 Migrating to CreateBooks (20190928055010)
-  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
   [1m[35m (4.9ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "isbn" character varying, "title" character varying, "author" character varying, "is_available" boolean, "language" character varying, "publish_date" date, "edition" character varying, "image" character varying, "subject" character varying, "summary" character varying, "is_special" boolean, "is_active" boolean, "count" integer, "library_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_9bb3dacd9b"
 FOREIGN KEY ("library_id")
   REFERENCES "libraries" ("id")
 )[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_books_on_library_id" ON "books"  ("library_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928055010"]]
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_books_on_library_id" ON "books"  ("library_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928055010"]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
 Migrating to CreateBookmarks (20190928055011)
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "library_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f5c21bfb00"
+  [1m[35m (4.4ms)[0m  [1m[35mCREATE TABLE "bookmarks" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "library_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f5c21bfb00"
 FOREIGN KEY ("student_id")
   REFERENCES "students" ("id")
 , CONSTRAINT "fk_rails_ecb780aac3"
@@ -15268,415 +14803,83 @@ FOREIGN KEY ("book_id")
 FOREIGN KEY ("library_id")
   REFERENCES "libraries" ("id")
 )[0m
-  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_bookmarks_on_student_id" ON "bookmarks"  ("student_id")[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_bookmarks_on_student_id" ON "bookmarks"  ("student_id")[0m
   [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_bookmarks_on_book_id" ON "bookmarks"  ("book_id")[0m
-  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_bookmarks_on_library_id" ON "bookmarks"  ("library_id")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE  INDEX  "index_bookmarks_on_library_id" ON "bookmarks"  ("library_id")[0m
   [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928055011"]]
-  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
-Migrating to CreateIssues (20190928055012)
-  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (4.2ms)[0m  [1m[35mCREATE TABLE "issues" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "library_id" bigint NOT NULL, "issued_from" date, "fine" float, "due_date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ea791380de"
-FOREIGN KEY ("student_id")
-  REFERENCES "students" ("id")
-, CONSTRAINT "fk_rails_c26e9b9220"
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateHoldRequests (20190928055020)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "hold_requests" ("id" bigserial primary key, "book_id" bigint NOT NULL, "student_id" bigint NOT NULL, "is_approved" boolean, "day_count" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_6f5605972d"
 FOREIGN KEY ("book_id")
   REFERENCES "books" ("id")
-, CONSTRAINT "fk_rails_342337f04d"
-FOREIGN KEY ("library_id")
-  REFERENCES "libraries" ("id")
+, CONSTRAINT "fk_rails_06c0bad730"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
 )[0m
-  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_issues_on_student_id" ON "issues"  ("student_id")[0m
-  [1m[35m (5.5ms)[0m  [1m[35mCREATE  INDEX  "index_issues_on_book_id" ON "issues"  ("book_id")[0m
-  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_issues_on_library_id" ON "issues"  ("library_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928055012"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE  INDEX  "index_hold_requests_on_book_id" ON "hold_requests"  ("book_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_hold_requests_on_student_id" ON "hold_requests"  ("student_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928055020"]]
   [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
 Migrating to AddApprovedToLibrarian (20190928064312)
   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "librarians" ADD "approved" boolean[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "librarians" ADD "approved" boolean[0m
   [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928064312"]]
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
 Migrating to AddDegreeToBookMappingIdToStudent (20190928070835)
   [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "students" ADD "degree_to_book_mappings_id" bigint[0m
-  [1m[35m (1.3ms)[0m  [1m[35mCREATE  INDEX  "index_students_on_degree_to_book_mappings_id" ON "students"  ("degree_to_book_mappings_id")[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "students" ADD "degree_to_book_mappings_id" bigint[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_students_on_degree_to_book_mappings_id" ON "students"  ("degree_to_book_mappings_id")[0m
   [1m[35m (4.4ms)[0m  [1m[35mALTER TABLE "students" ADD CONSTRAINT "fk_rails_ae5ba4f456"
 FOREIGN KEY ("degree_to_book_mappings_id")
   REFERENCES "degree_to_book_mappings" ("id")
 [0m
-  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928070835"]]
-  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190928070835"]]
+  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
 Migrating to CreateBookAudits (20190929035059)
-  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "book_audits" ("id" bigserial primary key, "isbn" character varying, "title" character varying, "author" character varying, "is_available" boolean, "language" character varying, "publish_date" date, "edition" character varying, "image" character varying, "subject" character varying, "summary" character varying, "is_special" boolean, "book_id" bigint NOT NULL, "is_active" boolean, "issued_date" date, "returned_date" date, "student_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f19b955476"
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "book_audits" ("id" bigserial primary key, "isbn" character varying, "title" character varying, "author" character varying, "is_available" boolean, "language" character varying, "publish_date" date, "edition" character varying, "image" character varying, "subject" character varying, "summary" character varying, "is_special" boolean, "book_id" bigint NOT NULL, "is_active" boolean, "issued_date" date, "returned_date" date, "student_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_f19b955476"
 FOREIGN KEY ("book_id")
   REFERENCES "books" ("id")
 , CONSTRAINT "fk_rails_18bfa99dd0"
 FOREIGN KEY ("student_id")
   REFERENCES "students" ("id")
 )[0m
-  [1m[35m (1.1ms)[0m  [1m[35mCREATE  INDEX  "index_book_audits_on_book_id" ON "book_audits"  ("book_id")[0m
-  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_book_audits_on_student_id" ON "book_audits"  ("student_id")[0m
-  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190929035059"]]
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE  INDEX  "index_book_audits_on_book_id" ON "book_audits"  ("book_id")[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_book_audits_on_student_id" ON "book_audits"  ("student_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190929035059"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateIssues (20190930042902)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "issues" ("id" bigserial primary key, "student_id" bigint NOT NULL, "book_id" bigint NOT NULL, "issued_from" date, "fine" float, "due_date" date, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_ea791380de"
+FOREIGN KEY ("student_id")
+  REFERENCES "students" ("id")
+, CONSTRAINT "fk_rails_c26e9b9220"
+FOREIGN KEY ("book_id")
+  REFERENCES "books" ("id")
+)[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE  INDEX  "index_issues_on_student_id" ON "issues"  ("student_id")[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE  INDEX  "index_issues_on_book_id" ON "issues"  ("book_id")[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20190930042902"]]
   [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-09-30 04:46:55.800125"], ["updated_at", "2019-09-30 04:46:55.800125"]]
-  [1m[35m (0.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (5.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-10-03 00:28:05.309143"], ["updated_at", "2019-10-03 00:28:05.309143"]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/" for ::1 at 2019-09-30 01:28:32 -0400
-  
-PG::ConnectionBad (fe_sendauth: no password supplied
-):
-  
-pg (1.1.4) lib/pg.rb:56:in `initialize'
-pg (1.1.4) lib/pg.rb:56:in `new'
-pg (1.1.4) lib/pg.rb:56:in `connect'
-activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
-activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-09-30 01:35:05 -0400
-  
-PG::ConnectionBad (fe_sendauth: no password supplied
-):
-  
-pg (1.1.4) lib/pg.rb:56:in `initialize'
-pg (1.1.4) lib/pg.rb:56:in `new'
-pg (1.1.4) lib/pg.rb:56:in `connect'
-activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
-activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-09-30 01:35:06 -0400
-  
-PG::ConnectionBad (fe_sendauth: no password supplied
-):
-  
-pg (1.1.4) lib/pg.rb:56:in `initialize'
-pg (1.1.4) lib/pg.rb:56:in `new'
-pg (1.1.4) lib/pg.rb:56:in `connect'
-activerecord (6.0.0) lib/active_record/connection_adapters/postgresql_adapter.rb:46:in `postgresql_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:879:in `new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:923:in `checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:902:in `try_to_checkout_new_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:863:in `acquire_connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:587:in `checkout'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:431:in `connection'
-activerecord (6.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1111:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:231:in `retrieve_connection'
-activerecord (6.0.0) lib/active_record/connection_handling.rb:199:in `connection'
-activerecord (6.0.0) lib/active_record/migration.rb:562:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-09-30 01:40:55 -0400
-  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-10-02 20:28:20 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by StudentsController#index as HTML
-Completed 401 Unauthorized in 10ms (ActiveRecord: 0.0ms | Allocations: 1561)
+Completed 401 Unauthorized in 11ms (ActiveRecord: 0.0ms | Allocations: 1714)
 
 
-Started GET "/admins/sign_in" for ::1 at 2019-09-30 01:40:56 -0400
+Started GET "/admins/sign_in" for ::1 at 2019-10-02 20:28:20 -0400
 Processing by Admins::SessionsController#new as HTML
   Rendering admins/sessions/new.html.erb within layouts/application
-  Rendered admins/shared/_links.html.erb (Duration: 2.9ms | Allocations: 658)
-  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 17.7ms | Allocations: 4043)
-  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 92)
-Completed 200 OK in 79ms (Views: 46.0ms | ActiveRecord: 11.1ms | Allocations: 19300)
-
-
-Started GET "/admins/sign_in" for ::1 at 2019-09-30 01:41:48 -0400
-  
-ArgumentError (Missing :controller key on routes definition, please check your routes.):
-  
-config/routes.rb:23:in `block in <top (required)>'
-config/routes.rb:1:in `<top (required)>'
-Started GET "/" for ::1 at 2019-09-30 01:41:50 -0400
-  
-ActionController::RoutingError (No route matches [GET] "/"):
-  
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-DEPRECATION WARNING: Using `bin/rake routes` is deprecated and will be removed in Rails 6.1. Use `bin/rails routes` instead.
- (called from load at /Users/ayush/.rvm/gems/ruby-2.5.1/bin/rake:23)
-Started GET "/" for ::1 at 2019-09-30 01:43:05 -0400
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  
-AbstractController::ActionNotFound (The action 'session' could not be found for StudentsController):
-  
-actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
-actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
-actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
-actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
-warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
-warden (1.2.8) lib/warden/manager.rb:34:in `catch'
-warden (1.2.8) lib/warden/manager.rb:34:in `call'
-rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
-rack (2.0.7) lib/rack/etag.rb:25:in `call'
-rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.7) lib/rack/head.rb:12:in `call'
-actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
-rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
-activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-09-30 01:43:13 -0400
-  
-AbstractController::ActionNotFound (The action 'sign_in' could not be found for StudentsController):
-  
-actionpack (6.0.0) lib/abstract_controller/base.rb:131:in `process'
-actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
-actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
-actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
-actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
-actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
-warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
-warden (1.2.8) lib/warden/manager.rb:34:in `catch'
-warden (1.2.8) lib/warden/manager.rb:34:in `call'
-rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
-rack (2.0.7) lib/rack/etag.rb:25:in `call'
-rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
-rack (2.0.7) lib/rack/head.rb:12:in `call'
-actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
-rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
-rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
-activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
-activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
-actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
-web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
-web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
-web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
-railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
-activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
-railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
-sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
-rack (2.0.7) lib/rack/method_override.rb:22:in `call'
-rack (2.0.7) lib/rack/runtime.rb:22:in `call'
-activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
-rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
-actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
-webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
-rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
-railties (6.0.0) lib/rails/engine.rb:526:in `call'
-puma (3.12.1) lib/puma/configuration.rb:227:in `call'
-puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
-puma (3.12.1) lib/puma/server.rb:474:in `process_client'
-puma (3.12.1) lib/puma/server.rb:334:in `block in run'
-puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
-Started GET "/" for ::1 at 2019-09-30 01:43:40 -0400
-Processing by StudentHomeController#index as HTML
-Completed 401 Unauthorized in 7ms (ActiveRecord: 0.0ms | Allocations: 1672)
-
-
-Started GET "/students/sign_in" for ::1 at 2019-09-30 01:43:40 -0400
-Processing by Students::SessionsController#new as HTML
-  Rendering students/sessions/new.html.erb within layouts/application
-  Rendered students/shared/_links.html.erb (Duration: 1.3ms | Allocations: 658)
-  Rendered students/sessions/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 3769)
-  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 92)
-Completed 200 OK in 47ms (Views: 24.9ms | ActiveRecord: 9.1ms | Allocations: 20598)
+  Rendered admins/shared/_links.html.erb (Duration: 1.9ms | Allocations: 659)
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 15.0ms | Allocations: 4040)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 93)
+Completed 200 OK in 71ms (Views: 42.2ms | ActiveRecord: 11.2ms | Allocations: 19412)
 
 
