@@ -1,0 +1,2 @@
+module LmsHomeHelper
+end

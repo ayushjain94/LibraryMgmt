@@ -19,7 +19,9 @@ Rails.application.routes.draw do
       registrations: 'students/registrations',
       sessions: 'students/sessions'
   }
-  root :to => 'student_home#index'
+
+  root :to => 'lms_home#index'
+
   post 'books/:id/check_out', to: 'books#check_out', :as => :books_check_out
   post 'books/:id/student_check_out', to: 'books#student_check_out', :as => :books_student_check_out
   get 'books/:id/admin_check_out', to: 'books#admin_check_out', :as => :books_admin_check_out
