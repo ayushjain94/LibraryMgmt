@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   resources :belongs
   resources :libraries
   resources :books
-
+  
   devise_for :admins, controllers: {sessions: 'admins/sessions', registrations: 'admins/registrations'}
 
   devise_for :librarians, controllers: {
@@ -19,6 +19,7 @@ Rails.application.routes.draw do
       registrations: 'students/registrations',
       sessions: 'students/sessions'
   }
+  resources :students
 
   root :to => 'lms_home#index'
 

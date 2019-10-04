@@ -6,7 +6,7 @@ class AdminHomeController < ApplicationController
   end
 
   def showstudents
-    @show_students = Student.where(is_active: nil)
+    @show_students = Student.all
   end
 
   def librarianapprovals
