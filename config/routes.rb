@@ -14,6 +14,7 @@ Rails.application.routes.draw do
       registrations: 'librarians/registrations',
       sessions: 'librarians/sessions'
   }
+  resources :librarians
 
   devise_for :students, controllers: {
       registrations: 'students/registrations',

@@ -10,7 +10,7 @@ class AdminMailer < Devise::Mailer
     def book_checked_out(email, book)
       @email = email
       @book = book
-      mail(to: @email, subject: 'Book #{@book} has been successfully checked out')
+      mail(to: @email, subject: "Book #{@book} has been successfully checked out")  
     end
 
 end
