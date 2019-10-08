@@ -161,12 +161,6 @@ ActiveRecord::Schema.define(version: 2019_10_08_055117) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.bigint "degree_to_book_mappings_id"
-    t.string "provider"
-    t.string "uid"
-    t.string "token"
-    t.integer "expires_at"
-    t.boolean "expires"
-    t.string "refresh_token"
     t.index ["degree_to_book_mappings_id"], name: "index_students_on_degree_to_book_mappings_id"
     t.index ["email"], name: "index_students_on_email", unique: true
     t.index ["reset_password_token"], name: "index_students_on_reset_password_token", unique: true
