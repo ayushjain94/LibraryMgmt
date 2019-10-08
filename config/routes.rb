@@ -18,7 +18,8 @@ Rails.application.routes.draw do
 
   devise_for :students, controllers: {
       registrations: 'students/registrations',
-      sessions: 'students/sessions'
+      sessions: 'students/sessions',
+      omniauth_callbacks: 'students/omniauth_callbacks'
   }
   resources :students
 

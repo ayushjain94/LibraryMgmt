@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_30_042902) do
+ActiveRecord::Schema.define(version: 2019_10_08_055117) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -142,6 +142,11 @@ ActiveRecord::Schema.define(version: 2019_09_30_042902) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "omniauth_callbacks_controllers", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "students", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -156,6 +161,12 @@ ActiveRecord::Schema.define(version: 2019_09_30_042902) do
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
     t.bigint "degree_to_book_mappings_id"
+    t.string "provider"
+    t.string "uid"
+    t.string "token"
+    t.integer "expires_at"
+    t.boolean "expires"
+    t.string "refresh_token"
     t.index ["degree_to_book_mappings_id"], name: "index_students_on_degree_to_book_mappings_id"
     t.index ["email"], name: "index_students_on_email", unique: true
     t.index ["reset_password_token"], name: "index_students_on_reset_password_token", unique: true
