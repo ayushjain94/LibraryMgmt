@@ -12,17 +12,59 @@
 
 <body >
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Library Management System</a>
+  <%= link_to 'Library Management System', root_path, class: "navbar-brand" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
 
-    <% if librarian_signed_in? %>
-      <%= current_librarian.email %>
-    <% end %>
+    <% if admin_signed_in? %>
+      <ul class="navbar-nav mr-auto">
+        <%= link_to 'Admin Home', admin_home_path, class: "nav-link text-secondary" %>
 
-    <% if student_signed_in? %>
+        <%= link_to 'Manage Students', students_path, class: "nav-link text-secondary" %>
+
+        <%= link_to 'Librarians Approval Request', librarianapprovals_admin_home_path, class: "nav-link text-secondary" %>
+
+        <%= link_to 'Librarians', librarians_path, class: "nav-link text-secondary" %>
+
+        <%= link_to 'Hold Requests', holdrequestapprovals_admin_home_path, class: "nav-link text-secondary"%>
+
+        <%= link_to 'View Books', books_path, class: "nav-link text-secondary"%>
+
+        <%= link_to 'View Libraries', libraries_path, class: "nav-link text-secondary" %>
+
+
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= current_admin.email %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%#= link_to "Edit Profile", edit_admin_registration_path, class: "dropdown-item" %>
+            <%= link_to "Logout", destroy_admin_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+
+    <% elsif librarian_signed_in? %>
+      <ul class="navbar-nav mr-auto">
+        <%= link_to 'New Book', new_book_path, class: "nav-link text-secondary" %>
+      </ul>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <%= current_librarian.email %>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <%= link_to "Edit Profile", edit_librarian_registration_path, class: "dropdown-item" %>
+            <%= link_to "Logout", destroy_librarian_session_path, method: :delete, class: "dropdown-item" %>
+          </div>
+        </li>
+      </ul>
+
+    <% elsif student_signed_in? %>
       <ul class="navbar-nav mr-auto">
         <%= link_to 'Student Home', student_home_path, class: "nav-link text-secondary" %>
 
@@ -54,9 +96,6 @@
       </ul>
     <% end %>
 
-    <% if admin_signed_in? %>
-      <%= current_admin.email %>
-    <% end %>
     <!--        <li class="nav-item">-->
     <%#= link_to 'Students', {controller: 'students', action: 'index'}, class: "nav-link" %>
     <!--        </li>-->

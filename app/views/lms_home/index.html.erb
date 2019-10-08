@@ -4,8 +4,21 @@
 <br >
 <h3>Are you ? </h3>
 <br >
-<%= link_to 'Student', student_home_path %>
-<br >
-<%= link_to 'Librarian', librarian_home_path %>
-<br >
-<%= link_to 'Admin', admin_home_path %>
+
+<div class="row">
+  <div class="col-md-4">
+    <%= link_to (image_tag ("https://img.icons8.com/plasticine/100/000000/student-male.png")), student_home_path %>
+    <br>
+    <%= link_to 'Student Login', student_home_path %>
+  </div>
+  <div class="col-md-4">
+    <%= link_to (image_tag ("https://img.icons8.com/dusk/100/000000/admin-settings-male.png")), admin_home_path %>
+    <br>
+    <%= link_to 'Admin Login', admin_home_path %>
+  </div>
+  <div class="col-md-4">
+    <%= link_to (image_tag ("https://img.icons8.com/officel/80/000000/library.png")), librarian_home_path %>
+    <br>
+    <%= link_to 'Librarian Login', librarian_home_path %>
+  </div>
+</div>
