@@ -17,5 +17,13 @@
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
       <jdbc-url>jdbc:postgresql://127.0.0.1:5432/libraryMgmtSys_development</jdbc-url>
     </data-source>
+    <data-source source="LOCAL" name="Rails LibraryMgmt: production" uuid="607f7406-3be4-4340-8d8a-ecf32f7e162f">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <imported>true</imported>
+      <remarks>$PROJECT_DIR$/config/database.yml</remarks>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5432/libraryMgmtSys_production</jdbc-url>
+    </data-source>
   </component>
 </project>

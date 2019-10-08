@@ -35,6 +35,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'omniauth' 
 
 gem 'omniauth-facebook'
+gem "bootstrap_form", "~> 4.0"
 
 gem 'carrierwave'
 
