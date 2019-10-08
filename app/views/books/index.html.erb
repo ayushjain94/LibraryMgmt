@@ -11,6 +11,14 @@
   </div>
 <% end %>
 
+<% if (admin_signed_in? || librarian_signed_in? )%>
+  <br>
+  <div class="row justify-content-center">
+    <%= link_to "Create book", new_book_path, class: "btn btn-success" %>
+  </div>
+  <br>
+<% end %>
+
 <table class="table table-hover row-clickable">
   <thead>
   <tr>

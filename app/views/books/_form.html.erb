@@ -1,79 +1,37 @@
 <%= render 'shared/errors', obj: @book %>
 
-<%= form_with(model: book, local: true) do |form| %>
+<%= bootstrap_form_with(model: book, local: true, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |form| %>
 
-  <div class="field">
-    <%= form.label :isbn %>
     <%= form.text_field :isbn %>
-  </div>
 
-  <div class="field">
-    <%= form.label :title %>
     <%= form.text_field :title %>
-  </div>
 
-  <div class="field">
-    <%= form.label :author %>
     <%= form.text_field :author %>
-  </div>
 
-  <div class="field">
-    <%= form.label :is_available %>
     <%= form.check_box :is_available %>
-  </div>
 
-  <div class="field">
-    <%= form.label :language %>
     <%= form.text_field :language %>
-  </div>
 
-  <div class="field">
-    <%= form.label :publish_date %>
     <%= form.date_select :publish_date %>
-  </div>
 
-  <div class="field">
-    <%= form.label :edition %>
     <%= form.text_field :edition %>
-  </div>
 
-  <div class="field">
-    <%= form.label :image %>
     <%= form.file_field :image %>
-  </div>
 
-  <div class="field">
-    <%= form.label :subject %>
     <%= form.text_field :subject %>
-  </div>
 
-  <div class="field">
-    <%= form.label :summary %>
     <%= form.text_field :summary %>
-  </div>
 
-  <div class="field">
-    <%= form.label :is_special %>
     <%= form.check_box :is_special %>
-  </div>
 
-
-  <div class="field">
-    <%= form.label :is_active %>
     <%= form.check_box :is_active %>
-  </div>
 
-  <div class="field">
-    <%= form.label :count %>
     <%= form.number_field :count %>
-  </div>
 
   <div class="field">
     <%= form.label :library_id %>
-    <%= select("book", "library_id", Library.all.collect { |c| [c.name, c.id] }) %>
+    <%= form.select :library_id, Library.all.collect { |c| [c.name, c.id] }, {label: "Select library"} %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+    <%= form.submit class: "btn btn-success" %>
 <% end %>
