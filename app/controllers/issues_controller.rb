@@ -23,14 +23,20 @@ class IssuesController < ApplicationController
     @book_audit = BookAudit.find_by book_id: @issue.book_id
     @book_audit.returned_date = Date.today
 
-    respond_to do |format|
-      if @book_audit.save && @book.save && @issue.destroy
-        format.html { redirect_to @issue, notice: 'Book was successfully returned.' }
-        format.json { render :show, status: :created, location: @book_audit }
-      else
-        format.html { render student_home_path }
-        format.json { render json: @book.errors, status: :unprocessable_entity }
+    @hreq = HoldRequest.find_by book_id: @book.id
+    if @hreq.nil? or (!@hreq.nil? and @book.is_special)
+      respond_to do |format|
+        if @book_audit.save && @book.save && @issue.destroy
+          format.html { redirect_to @issue, notice: 'Book was successfully returned.' }
+          format.json { render :show, status: :created, location: @book_audit }
+        else
+          format.html { render student_home_path }
+          format.json { render json: @book.errors, status: :unprocessable_entity }
+        end
       end
+    else
+      # redirect_to('/admin_home/holdrequestapprovals')
+      redirect_to books_admin_check_out_path(param_1: @hreq.student_id, param_2: @hreq.book_id,  id:@hreq.id)
     end
 
   end

@@ -7,19 +7,25 @@
   <td>Name</td>
   <td>Email</td>
   <td>ISBN</td>
+  <td>Availability</td>
   <td>Approve</td>
 
   </thead>
   <tbody>
   <% @pending_hreq.each do |req| %>
-  <% book = Book.find(req.book_id)%>
-  <% student = Student.find(req.student_id) %>
+    <% book = Book.find(req.book_id) %>
+    <% student = Student.find(req.student_id) %>
     <tr>
       <td><%= req.student_id %></td>
       <td><%= student.name %></td>
       <td><%= student.email %></td>
       <td><%= book.isbn %></td>
-      <td><a href="/approve_holdrequest/<%= req.id %>">Approve</a></td>
+      <td><%= book.is_available %></td>
+      <% if book.count > 0 %>
+        <td><a href="/approve_holdrequest/<%= req.id %>">Approve</a></td>
+      <% else %>
+        <td><span style="color: grey; ">Approve</span></td>
+      <% end %>
     </tr>
   <% end %>
   </tbody>

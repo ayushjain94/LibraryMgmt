@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+  before_action :authenticate_student!
   before_action :set_book, only: [:show, :edit, :update, :destroy, :student_check_out, :bookmark]
 
   # GET /books
@@ -98,8 +99,8 @@ class BooksController < ApplicationController
   def admin_check_out
     @hreq = HoldRequest.find(params[:id])
     @hreq.destroy
-    @book = Book.find(params[:param_1])
-    @student = Student.find(params[:param_2])
+    @student = Student.find(params[:param_1])
+    @book = Book.find(params[:param_2])
     check_out(@student)
   end
 
@@ -138,6 +139,7 @@ class BooksController < ApplicationController
         end
       end
     else
+      p student
       check_out(student)
     end
   end
@@ -169,12 +171,11 @@ class BooksController < ApplicationController
     @issue.fine = 0
     @max_days_count = Library.find(@book.library_id).max_borrow_count
     @issue.due_date = Time.now + @max_days_count.days
-    
+
     respond_to do |format|
       if @book_audit.save && @book.save && @issue.save
         format.html { redirect_to @book, notice: 'Book was successfully checked out.' }
         format.json { render :show, status: :created, location: @book_audit }
-        AdminMailer.book_checked_out(student.email, @book_audit.title).deliver
       else
         format.html { render :new }
         format.json { render json: @book.errors, status: :unprocessable_entity }
@@ -190,7 +191,6 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
-  
   # Never trust parameters from the scary internet, only allow the white list through.
   def book_params
     params.require(:book).permit(:search, :isbn, :title, :author, :is_available, :language, :publish_date, :edition, :image, :subject, :summary, :is_special, :is_active, :count, :library_id)
