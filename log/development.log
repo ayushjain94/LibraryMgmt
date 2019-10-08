@@ -33534,3 +33534,381 @@ C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/webpacker-4.0.7/lib/webpacker/runner.rb:1
 Completed 200 OK in 1206ms (Views: 1203.8ms | ActiveRecord: 0.6ms | Allocations: 149084)
 
 
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3935889510794414985)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3935889510794414985)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2019-10-08 14:25:17 -0400
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 711)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 93)
+Completed 200 OK in 31ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 7749)
+
+
+Started GET "/" for ::1 at 2019-10-08 17:31:45 -0400
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 711)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 93)
+Completed 200 OK in 28ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 7754)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:31:49 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1622)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-08 17:31:50 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 2.0ms | Allocations: 821)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 48.0ms | Allocations: 14256)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 87ms (Views: 54.8ms | ActiveRecord: 10.1ms | Allocations: 34357)
+
+
+Started GET "/admin_home" for ::1 at 2019-10-08 17:31:56 -0400
+Processing by AdminHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/admins/sign_in" for ::1 at 2019-10-08 17:31:56 -0400
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (Duration: 1.6ms | Allocations: 691)
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2750)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 24ms (Views: 11.2ms | ActiveRecord: 3.1ms | Allocations: 13754)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-08 17:32:00 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 384)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-08 17:32:00 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 1.5ms | Allocations: 689)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2746)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 27ms (Views: 11.3ms | ActiveRecord: 3.0ms | Allocations: 16617)
+
+
+Started GET "/librarians/sign_up" for ::1 at 2019-10-08 17:32:01 -0400
+Processing by Librarians::RegistrationsController#new as HTML
+  Rendering librarians/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 218)
+  [1m[36mLibrary Load (8.0ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/librarians/registrations/new.html.erb:17:in `collect'
+  Rendered librarians/shared/_links.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered librarians/registrations/new.html.erb within layouts/application (Duration: 29.3ms | Allocations: 10927)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 41ms (Views: 29.1ms | ActiveRecord: 10.6ms | Allocations: 15596)
+
+
+Started GET "/admin_home" for ::1 at 2019-10-08 17:32:05 -0400
+Processing by AdminHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/admins/sign_in" for ::1 at 2019-10-08 17:32:05 -0400
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/shared/_links.html.erb (Duration: 0.2ms | Allocations: 148)
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1717)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 5346)
+
+
+Started GET "/admins/sign_up" for ::1 at 2019-10-08 17:32:06 -0400
+Processing by Admins::RegistrationsController#new as HTML
+  Rendering admins/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered admins/shared/_links.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered admins/registrations/new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 2403)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6660)
+
+
+Started GET "/" for ::1 at 2019-10-08 17:32:40 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 402)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 90)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 5813)
+
+
+Started GET "/admin_home" for ::1 at 2019-10-08 17:32:42 -0400
+Processing by AdminHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/admins/sign_in" for ::1 at 2019-10-08 17:32:42 -0400
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1732)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 6775)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-08 17:32:46 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 332)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-08 17:32:46 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 1.1ms | Allocations: 602)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2567)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 6854)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-08 17:32:50 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-08 17:32:50 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 0.3ms | Allocations: 149)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1713)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 5347)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:32:53 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 349)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-08 17:32:53 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 1.5ms | Allocations: 674)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2651)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 14ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 6950)
+
+
+Started POST "/students/sign_in" for ::1 at 2019-10-08 17:32:58 -0400
+Processing by Students::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"BUdk7MpkakllAFY8MBN9ALrBlXFlzn9hbiDjgXU33crWLt/uYUtT87K3XaDphaDSw3USHwQUJPQ3AjnNcTJdZQ==", "student"=>{"email"=>"ajain37@ncsu.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mStudent Load (4.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/student_home
+Completed 302 Found in 131ms (ActiveRecord: 4.7ms | Allocations: 7237)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:32:58 -0400
+Processing by StudentHomeController#index as HTML
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering student_home/index.html.erb within layouts/application
+  Rendered student_home/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 85)
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 9.1ms | ActiveRecord: 0.4ms | Allocations: 6544)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:33:00 -0400
+Processing by StudentHomeController#index as HTML
+  [1m[36mStudent Load (0.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering student_home/index.html.erb within layouts/application
+  Rendered student_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 7.0ms | ActiveRecord: 0.8ms | Allocations: 5636)
+
+
+Started GET "/issues" for ::1 at 2019-10-08 17:33:01 -0400
+Processing by IssuesController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/issues_controller.rb:7:in `index'
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/issues_controller.rb:10:in `index'
+  Rendering issues/index.html.erb within layouts/application
+  [1m[36mIssue Load (3.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE "issues"."student_id" = $1[0m  [["student_id", 2]]
+  ↳ app/views/issues/index.html.erb:26
+  [1m[36mBook Load (1.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/issues/index.html.erb:27
+  [1m[36mLibrary Load (0.3ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/issues/index.html.erb:28
+  Rendered issues/index.html.erb within layouts/application (Duration: 38.6ms | Allocations: 22207)
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 56ms (Views: 36.0ms | ActiveRecord: 10.7ms | Allocations: 30324)
+
+
+Started GET "/bookmarks" for ::1 at 2019-10-08 17:33:04 -0400
+Processing by BookmarksController#index as HTML
+  [1m[36mStudent Load (0.8ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:7:in `index'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/bookmarks_controller.rb:10:in `index'
+  Rendering bookmarks/index.html.erb within layouts/application
+  [1m[36mBookmark Load (0.6ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."student_id" = $1[0m  [["student_id", 2]]
+  ↳ app/views/bookmarks/index.html.erb:24
+  Rendered bookmarks/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1032)
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 21ms (Views: 9.4ms | ActiveRecord: 2.9ms | Allocations: 8437)
+
+
+Started GET "/books" for ::1 at 2019-10-08 17:33:05 -0400
+Processing by BooksController#index as HTML
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:11:in `index'
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/book.rb:19:in `search'
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."university" = $1 LIMIT $2[0m  [["university", "NCSU"], ["LIMIT", 1]]
+  ↳ app/models/book.rb:20:in `search'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (library_id = '1')[0m
+  ↳ app/views/books/index.html.erb:43
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:44
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:59
+  [1m[36mBookmark Load (0.2ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."student_id" = $1 AND "bookmarks"."book_id" = $2 LIMIT $3[0m  [["student_id", 2], ["book_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:59
+  Rendered books/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3908)
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 23ms (Views: 14.0ms | ActiveRecord: 2.0ms | Allocations: 12085)
+
+
+Started GET "/hold_requests" for ::1 at 2019-10-08 17:33:07 -0400
+Processing by HoldRequestsController#index as HTML
+  Rendering hold_requests/index.html.erb within layouts/application
+  [1m[36mHoldRequest Load (0.7ms)[0m  [1m[34mSELECT "hold_requests".* FROM "hold_requests"[0m
+  ↳ app/views/hold_requests/index.html.erb:19
+  [1m[36mBook Load (0.2ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE "books"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/hold_requests/index.html.erb:20
+  Rendered hold_requests/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 6566)
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:67
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 27ms (Views: 19.6ms | ActiveRecord: 4.5ms | Allocations: 13133)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:33:11 -0400
+Processing by StudentHomeController#index as HTML
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering student_home/index.html.erb within layouts/application
+  Rendered student_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+  [1m[36mStudent Load (0.2ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 18ms (Views: 11.8ms | ActiveRecord: 0.7ms | Allocations: 5637)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:33:20 -0400
+Processing by StudentHomeController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering student_home/index.html.erb within layouts/application
+  Rendered student_home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mStudent Load (0.4ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 11ms (Views: 6.3ms | ActiveRecord: 0.7ms | Allocations: 5617)
+
+
+Started DELETE "/students/sign_out" for ::1 at 2019-10-08 17:33:24 -0400
+Processing by Students::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pc5px0zw/DaE9B9SMNf34BNHHbQCDmTc/8vbS1t+bgyBcMT/CK0MHi1FtthGME4DbG8Txgid/PBlrKuUOhFIHQ=="}
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 3029)
+
+
+Started GET "/" for ::1 at 2019-10-08 17:33:24 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 190)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 3578)
+
+
+Started GET "/" for ::1 at 2019-10-08 17:50:21 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 191)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 17ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 3899)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:50:22 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1558)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-08 17:50:22 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 0.4ms | Allocations: 243)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1818)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 18931)
+
+
+Started POST "/students/sign_in" for ::1 at 2019-10-08 17:50:27 -0400
+Processing by Students::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"STZrdNddzGPbtmoF1lKtf0szsTQjNnksCKMkWhMB2g05DvnBZKDjrsix+9QwOXmYQMvM9PsiPw54+5pZQrdt8g==", "student"=>{"email"=>"ajain37@ncsu.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mStudent Load (1.5ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `get__loggedin_user'
+Redirected to http://localhost:3000/student_home
+Completed 302 Found in 115ms (ActiveRecord: 1.7ms | Allocations: 2745)
+
+
+Started GET "/student_home" for ::1 at 2019-10-08 17:50:27 -0400
+Processing by StudentHomeController#index as HTML
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `get__loggedin_user'
+  Rendering student_home/index.html.erb within layouts/application
+  Rendered student_home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+  [1m[36mStudent Load (0.6ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.8ms | Allocations: 5435)
+
+
+Started GET "/books" for ::1 at 2019-10-08 17:50:35 -0400
+Processing by BooksController#index as HTML
+  [1m[36mStudent Load (0.7ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 ORDER BY "students"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:9:in `get__loggedin_user'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/books_controller.rb:13:in `index'
+  [1m[36mStudent Load (0.3ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/models/book.rb:19:in `search'
+  [1m[36mLibrary Load (0.4ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."university" = $1 LIMIT $2[0m  [["university", "NCSU"], ["LIMIT", 1]]
+  ↳ app/models/book.rb:20:in `search'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (library_id = '1')[0m
+  ↳ app/views/books/index.html.erb:43
+  [1m[36mLibrary Load (0.2ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries" WHERE "libraries"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:44
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:59
+  [1m[36mBookmark Load (0.4ms)[0m  [1m[34mSELECT "bookmarks".* FROM "bookmarks" WHERE "bookmarks"."student_id" = $1 AND "bookmarks"."book_id" = $2 LIMIT $3[0m  [["student_id", 2], ["book_id", 1], ["LIMIT", 1]]
+  ↳ app/views/books/index.html.erb:59
+  Rendered books/index.html.erb within layouts/application (Duration: 27.1ms | Allocations: 15092)
+  [1m[36mCACHE Student Load (0.0ms)[0m  [1m[34mSELECT "students".* FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/views/layouts/application.html.erb:72
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 55ms (Views: 31.3ms | ActiveRecord: 3.0ms | Allocations: 30298)
+
+

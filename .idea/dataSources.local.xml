@@ -3,17 +3,19 @@
   <component name="dataSourceStorageLocal">
     <data-source name="Rails LibraryMgmt: test" uuid="8f2a7cb9-0109-41ef-9f5d-acdd6cdd76c0">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <secret-storage>forget</secret-storage>
+      <user-name>postgres</user-name>
       <schema-mapping />
     </data-source>
     <data-source name="Rails LibraryMgmt: development" uuid="d31095ad-bbdc-489e-992c-f814f2bf4dc4">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <secret-storage>forget</secret-storage>
+      <database-info product="PostgreSQL" version="11.5" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.2.5" dbms="POSTGRES" exact-version="11.5" exact-driver-version="42.2">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+      <user-name>postgres</user-name>
       <schema-mapping />
     </data-source>
     <data-source name="Rails LibraryMgmt: production" uuid="607f7406-3be4-4340-8d8a-ecf32f7e162f">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
-      <user-name>postgres</user-name>
       <schema-mapping />
     </data-source>
   </component>
