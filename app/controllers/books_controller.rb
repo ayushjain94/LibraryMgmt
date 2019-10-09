@@ -26,7 +26,7 @@ class BooksController < ApplicationController
       end
     elsif current_user == 'student'
       @id = (Student.find_by email: current_student.email).id
-      @univ = Student.find(id).university
+      @univ = Student.find(@id).university
       @lib = (Library.find_by university: @univ)
       if search.blank?
         if @lib.nil?

@@ -8,7 +8,7 @@ class IssuesController < ApplicationController
       @lid = current_librarian.library_id
       @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id WHERE books.library_id = #{@lid}")
     elsif @current_user == 'student'
-      @issues = Issue.where(student_id: @current_user.id)
+      @issues = Issue.where(student_id: current_student.id)
     else
       @issues = Issue.all
     end
