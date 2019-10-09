@@ -3,6 +3,8 @@ class Librarian < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  validates :library, :name, presence: true
+
   def active_for_authentication?
     super && approved?
   end

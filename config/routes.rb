@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   resources :libraries
   resources :books
   
-  devise_for :admins, controllers: {sessions: 'admins/sessions', registrations: 'admins/registrations'}
+  
+
+  devise_for :admins, :skip => [:registrations], controllers: {sessions: 'admins/sessions', registrations: 'admins/registrations'}
 
   devise_for :librarians, controllers: {
       registrations: 'librarians/registrations',

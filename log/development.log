@@ -38392,3 +38392,995 @@ Processing by LmsHomeController#index as HTML
 Completed 200 OK in 14ms (Views: 8.3ms | ActiveRecord: 0.5ms | Allocations: 4391)
 
 
+Started GET "/" for ::1 at 2019-10-09 01:17:43 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (1.1ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 442)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 93)
+Completed 200 OK in 60ms (Views: 26.9ms | ActiveRecord: 5.3ms | Allocations: 19480)
+
+
+Started GET "/admins/sign_in" for ::1 at 2019-10-09 01:17:45 -0400
+Processing by Admins::SessionsController#new as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 37.7ms | Allocations: 15299)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 57ms (Views: 43.7ms | ActiveRecord: 2.7ms | Allocations: 28621)
+
+
+Started GET "/admins/sign_up" for ::1 at 2019-10-09 01:17:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/admins/sign_up"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/librarians" for ::1 at 2019-10-09 01:17:59 -0400
+Processing by LibrariansController#index as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.3ms | Allocations: 1537)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:18:02 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.4ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 53)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 12ms (Views: 8.2ms | ActiveRecord: 0.4ms | Allocations: 4408)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:18:07 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 4386)
+
+
+Started DELETE "/librarians/sign_out" for ::1 at 2019-10-09 01:18:09 -0400
+Processing by Librarians::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Eus3dXJe+6PP2tRj11p0ec5OIYqibYP3lrUUVP0DVpCt+/fqxN9Ek5XmZ2FrTCWCsnau5nvIqCWGQjinNEQrpQ=="}
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms | Allocations: 3288)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:18:09 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 452)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4092)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:18:11 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 541)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:18:11 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 2.1ms | Allocations: 708)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2868)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 7291)
+
+
+Started GET "/librarians/password/new" for ::1 at 2019-10-09 01:18:41 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 1.3ms | Allocations: 217)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 2.2ms | Allocations: 596)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 2166)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 20ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 6543)
+
+
+Started GET "/admins/password/new" for ::1 at 2019-10-09 01:18:46 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 188.0ms | Allocations: 67488)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 189.6ms | Allocations: 68144)
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 0.0ms | Allocations: 68967)
+
+
+  
+ActionView::Template::Error (undefined method `new_admin_registration_path' for #<ActionDispatch::Routing::RoutesProxy:0x00007fbe87bc87f0>
+Did you mean?  new_admin_session_path
+               new_librarian_registration_path):
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+actionpack (6.0.0) lib/action_dispatch/routing/routes_proxy.rb:50:in `method_missing'
+devise (4.7.1) lib/devise/controllers/url_helpers.rb:53:in `block (4 levels) in generate_helpers!'
+devise (4.7.1) app/views/devise/shared/_links.html.erb:6
+actionview (6.0.0) lib/action_view/base.rb:274:in `_run'
+actionview (6.0.0) lib/action_view/template.rb:185:in `block in render'
+activesupport (6.0.0) lib/active_support/notifications.rb:182:in `instrument'
+actionview (6.0.0) lib/action_view/template.rb:386:in `instrument_render_template'
+actionview (6.0.0) lib/action_view/template.rb:183:in `render'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:358:in `block in render_partial'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:89:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:88:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:347:in `render_partial'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:317:in `render'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:65:in `render_partial_to_object'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:53:in `render_partial'
+actionview (6.0.0) lib/action_view/helpers/rendering_helper.rb:38:in `render'
+devise (4.7.1) app/views/devise/passwords/new.html.erb:16
+actionview (6.0.0) lib/action_view/base.rb:274:in `_run'
+actionview (6.0.0) lib/action_view/template.rb:185:in `block in render'
+activesupport (6.0.0) lib/active_support/notifications.rb:182:in `instrument'
+actionview (6.0.0) lib/action_view/template.rb:386:in `instrument_render_template'
+actionview (6.0.0) lib/action_view/template.rb:183:in `render'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:59:in `block (2 levels) in render_template'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:89:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:88:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:58:in `block in render_template'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:57:in `render_template'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:13:in `render'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.0.0) lib/action_view/rendering.rb:118:in `block in _render_template'
+actionview (6.0.0) lib/action_view/base.rb:304:in `in_rendering_context'
+actionview (6.0.0) lib/action_view/rendering.rb:117:in `_render_template'
+actionpack (6.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (6.0.0) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.0.0) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.0.0) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (6.0.0) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/Users/ayush/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+activesupport (6.0.0) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:85:in `cleanup_view_runtime'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:34:in `cleanup_view_runtime'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (6.0.0) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admin/password/new" for ::1 at 2019-10-09 01:18:53 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/admin/password/new"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/admins/sign_in" for ::1 at 2019-10-09 01:18:57 -0400
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1494)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 5216)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:19:17 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 488)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:19:17 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 0.2ms | Allocations: 149)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1748)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 5492)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:19:17 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 205)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 3702)
+
+
+Started GET "/student_home" for ::1 at 2019-10-09 01:19:19 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 546)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-09 01:19:19 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 1.9ms | Allocations: 804)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 2882)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 32ms (Views: 10.8ms | ActiveRecord: 2.8ms | Allocations: 21281)
+
+
+Started GET "/students/password/new" for ::1 at 2019-10-09 01:19:20 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 1.1ms | Allocations: 242)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 2.9ms | Allocations: 897)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4481)
+
+
+Started GET "/admins/password/new" for ::1 at 2019-10-09 01:19:25 -0400
+Processing by Devise::PasswordsController#new as HTML
+  Rendering /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.1ms | Allocations: 15)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_links.html.erb (Duration: 150.8ms | Allocations: 67524)
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/passwords/new.html.erb within layouts/application (Duration: 152.6ms | Allocations: 68136)
+Completed 500 Internal Server Error in 155ms (ActiveRecord: 0.0ms | Allocations: 68973)
+
+
+  
+ActionView::Template::Error (undefined method `new_admin_registration_path' for #<ActionDispatch::Routing::RoutesProxy:0x00007fbe82fa6390>
+Did you mean?  new_admin_session_path
+               new_librarian_registration_path
+               new_student_registration_path):
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+    6:   <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+    7: <% end %>
+    8: 
+    9: <%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  
+actionpack (6.0.0) lib/action_dispatch/routing/routes_proxy.rb:50:in `method_missing'
+devise (4.7.1) lib/devise/controllers/url_helpers.rb:53:in `block (4 levels) in generate_helpers!'
+devise (4.7.1) app/views/devise/shared/_links.html.erb:6
+actionview (6.0.0) lib/action_view/base.rb:274:in `_run'
+actionview (6.0.0) lib/action_view/template.rb:185:in `block in render'
+activesupport (6.0.0) lib/active_support/notifications.rb:182:in `instrument'
+actionview (6.0.0) lib/action_view/template.rb:386:in `instrument_render_template'
+actionview (6.0.0) lib/action_view/template.rb:183:in `render'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:358:in `block in render_partial'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:89:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:88:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:347:in `render_partial'
+actionview (6.0.0) lib/action_view/renderer/partial_renderer.rb:317:in `render'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:65:in `render_partial_to_object'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:53:in `render_partial'
+actionview (6.0.0) lib/action_view/helpers/rendering_helper.rb:38:in `render'
+devise (4.7.1) app/views/devise/passwords/new.html.erb:16
+actionview (6.0.0) lib/action_view/base.rb:274:in `_run'
+actionview (6.0.0) lib/action_view/template.rb:185:in `block in render'
+activesupport (6.0.0) lib/active_support/notifications.rb:182:in `instrument'
+actionview (6.0.0) lib/action_view/template.rb:386:in `instrument_render_template'
+actionview (6.0.0) lib/action_view/template.rb:183:in `render'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:59:in `block (2 levels) in render_template'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:89:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/abstract_renderer.rb:88:in `instrument'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:58:in `block in render_template'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:57:in `render_template'
+actionview (6.0.0) lib/action_view/renderer/template_renderer.rb:13:in `render'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:61:in `render_template_to_object'
+actionview (6.0.0) lib/action_view/renderer/renderer.rb:29:in `render_to_object'
+actionview (6.0.0) lib/action_view/rendering.rb:118:in `block in _render_template'
+actionview (6.0.0) lib/action_view/base.rb:304:in `in_rendering_context'
+actionview (6.0.0) lib/action_view/rendering.rb:117:in `_render_template'
+actionpack (6.0.0) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+actionview (6.0.0) lib/action_view/rendering.rb:103:in `render_to_body'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:52:in `render_to_body'
+actionpack (6.0.0) lib/action_controller/metal/renderers.rb:142:in `render_to_body'
+actionpack (6.0.0) lib/abstract_controller/rendering.rb:25:in `render'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:36:in `render'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+activesupport (6.0.0) lib/active_support/core_ext/benchmark.rb:14:in `block in ms'
+/Users/ayush/.rvm/rubies/ruby-2.5.1/lib/ruby/2.5.0/benchmark.rb:308:in `realtime'
+activesupport (6.0.0) lib/active_support/core_ext/benchmark.rb:14:in `ms'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:85:in `cleanup_view_runtime'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:34:in `cleanup_view_runtime'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:43:in `render'
+actionpack (6.0.0) lib/action_controller/metal/implicit_render.rb:35:in `default_render'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (6.0.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:196:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (6.0.0) lib/active_support/callbacks.rb:135:in `run_callbacks'
+actionpack (6.0.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:33:in `block in process_action'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `block in instrument'
+activesupport (6.0.0) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (6.0.0) lib/active_support/notifications.rb:180:in `instrument'
+actionpack (6.0.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (6.0.0) lib/action_controller/metal/params_wrapper.rb:245:in `process_action'
+activerecord (6.0.0) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.0.0) lib/abstract_controller/base.rb:136:in `process'
+actionview (6.0.0) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (6.0.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:51:in `dispatch'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/mapper.rb:18:in `block in <class:Constraints>'
+actionpack (6.0.0) lib/action_dispatch/routing/mapper.rb:48:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+omniauth (1.9.0) lib/omniauth/strategy.rb:192:in `call!'
+omniauth (1.9.0) lib/omniauth/strategy.rb:169:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/student_home" for ::1 at 2019-10-09 01:21:36 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 510)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-09 01:21:36 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 0.6ms | Allocations: 227)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1791)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 5529)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:21:36 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 206)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 3720)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:26:59 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms | Allocations: 1593)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:26:59 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 0.2ms | Allocations: 162)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1767)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 34ms (Views: 14.4ms | ActiveRecord: 4.1ms | Allocations: 15342)
+
+
+Started POST "/librarians/sign_in" for ::1 at 2019-10-09 01:27:04 -0400
+Processing by Librarians::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"GJjBm2pAwNz6+qox+78YR9gksNRamaHpv6CdJpf8TKMX9vjJDXn4Nkq2MaShN+QkUAE98FmgYnH/QnA0mo1fNQ==", "librarian"=>{"email"=>"ajain37@ncsu.edu", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."email" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["email", "ajain37@ncsu.edu"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+Redirected to http://localhost:3000/librarian_home/
+Completed 302 Found in 121ms (ActiveRecord: 0.3ms | Allocations: 5393)
+
+
+Started GET "/librarian_home/" for ::1 at 2019-10-09 01:27:04 -0400
+Processing by LibrarianHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 55)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.2ms | Allocations: 4934)
+
+
+Started GET "/books/new" for ::1 at 2019-10-09 01:27:07 -0400
+Processing by BooksController#new as HTML
+  [1m[36mLibrarian Load (0.5ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 1.1ms | Allocations: 222)
+  [1m[36mLibrary Load (0.5ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/books/_form.html.erb:33:in `collect'
+  Rendered books/_form.html.erb (Duration: 28.3ms | Allocations: 16742)
+  Rendered books/new.html.erb within layouts/application (Duration: 30.5ms | Allocations: 17107)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 65ms (Views: 34.5ms | ActiveRecord: 6.0ms | Allocations: 37074)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:27:35 -0400
+Processing by Librarians::SessionsController#new as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/librarian_home/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 17ms (ActiveRecord: 3.5ms | Allocations: 11627)
+
+
+Started GET "/books/new" for ::1 at 2019-10-09 01:27:37 -0400
+Processing by BooksController#new as HTML
+  [1m[36mLibrarian Load (0.4ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.0ms | Allocations: 15)
+  [1m[36mLibrary Load (0.3ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/books/_form.html.erb:33:in `collect'
+  Rendered books/_form.html.erb (Duration: 22.1ms | Allocations: 14314)
+  Rendered books/new.html.erb within layouts/application (Duration: 22.4ms | Allocations: 14412)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 59ms (Views: 27.7ms | ActiveRecord: 7.1ms | Allocations: 32744)
+
+
+Started GET "/librarian_home/" for ::1 at 2019-10-09 01:27:39 -0400
+Processing by LibrarianHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 54)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.2ms | Allocations: 4621)
+
+
+Started GET "/librarian_home/" for ::1 at 2019-10-09 01:27:39 -0400
+Processing by LibrarianHomeController#index as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 4363)
+
+
+Started GET "/librarian_home/" for ::1 at 2019-10-09 01:27:40 -0400
+Processing by LibrarianHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 4359)
+
+
+Started GET "/librarian_home/" for ::1 at 2019-10-09 01:27:40 -0400
+Processing by LibrarianHomeController#index as HTML
+  [1m[36mLibrarian Load (0.4ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 5.5ms | ActiveRecord: 0.4ms | Allocations: 4360)
+
+
+Started GET "/books/new" for ::1 at 2019-10-09 01:27:41 -0400
+Processing by BooksController#new as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (Duration: 0.0ms | Allocations: 15)
+  [1m[36mLibrary Load (0.4ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/books/_form.html.erb:33:in `collect'
+  Rendered books/_form.html.erb (Duration: 15.9ms | Allocations: 8313)
+  Rendered books/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 8410)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 26ms (Views: 21.7ms | ActiveRecord: 0.7ms | Allocations: 12779)
+
+
+Started GET "/books" for ::1 at 2019-10-09 01:27:46 -0400
+Processing by BooksController#index as HTML
+  [1m[36mLibrarian Load (1.8ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (74.1ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (count > 0)[0m
+  ↳ app/views/books/index.html.erb:43
+  Rendered books/index.html.erb within layouts/application (Duration: 77.6ms | Allocations: 1619)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 92ms (Views: 8.3ms | ActiveRecord: 75.8ms | Allocations: 6209)
+
+
+Started GET "/books" for ::1 at 2019-10-09 01:28:24 -0400
+Processing by BooksController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (count > 0)[0m
+  ↳ app/views/books/index.html.erb:43
+  Rendered books/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1757)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 34ms (Views: 11.6ms | ActiveRecord: 4.5ms | Allocations: 18290)
+
+
+Started GET "/books" for ::1 at 2019-10-09 01:28:25 -0400
+Processing by BooksController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (count > 0)[0m
+  ↳ app/views/books/index.html.erb:43
+  Rendered books/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 858)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.5ms | Allocations: 5270)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:28:37 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 54)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 4619)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:28:37 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 8ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 4382)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:28:37 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 4378)
+
+
+Started GET "/books" for ::1 at 2019-10-09 01:28:40 -0400
+Processing by BooksController#index as HTML
+  [1m[36mLibrarian Load (0.2ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books" WHERE (count > 0)[0m
+  ↳ app/views/books/index.html.erb:43
+  Rendered books/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 858)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.6ms | Allocations: 5268)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:33:58 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.1ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 55)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 24ms (Views: 9.4ms | ActiveRecord: 2.7ms | Allocations: 14222)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:34:00 -0400
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 48)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 15ms (Views: 10.4ms | ActiveRecord: 0.3ms | Allocations: 4379)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:34:47 -0400
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by LmsHomeController#index as HTML
+  [1m[36mLibrarian Load (0.5ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:8:in `get__loggedin_user'
+  Rendering librarian_home/index.html.erb within layouts/application
+  Rendered librarian_home/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 442)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 93)
+Completed 200 OK in 41ms (Views: 15.9ms | ActiveRecord: 5.4ms | Allocations: 19464)
+
+
+Started DELETE "/librarians/sign_out" for ::1 at 2019-10-09 01:34:50 -0400
+Processing by Librarians::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ZYl9EDQoHWN0VErfTEx8jjAVB/JD5TzWIPo9yTib1I8Qv8WE0h3nNuf8IE3S8PkDFPGc2O+U3ZaII08O05a6WA=="}
+  [1m[36mLibrarian Load (0.3ms)[0m  [1m[34mSELECT "librarians".* FROM "librarians" WHERE "librarians"."id" = $1 ORDER BY "librarians"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.3ms | Allocations: 5114)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:34:50 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 453)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 4088)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:34:52 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 543)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:34:52 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 1.5ms | Allocations: 708)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 37.2ms | Allocations: 14212)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 46ms (Views: 43.8ms | ActiveRecord: 0.0ms | Allocations: 19811)
+
+
+Started GET "/librarians/sign_up" for ::1 at 2019-10-09 01:34:55 -0400
+Processing by Librarians::RegistrationsController#new as HTML
+  Rendering librarians/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.7ms | Allocations: 218)
+  [1m[36mLibrary Load (0.5ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/librarians/registrations/new.html.erb:17:in `collect'
+  Rendered librarians/shared/_links.html.erb (Duration: 0.7ms | Allocations: 134)
+  Rendered librarians/registrations/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 10968)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 28ms (Views: 24.2ms | ActiveRecord: 2.8ms | Allocations: 15758)
+
+
+Started POST "/librarians" for ::1 at 2019-10-09 01:35:06 -0400
+Processing by Librarians::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"6+KotbhGpR4tPP275MFWFhEs57Yjz5i2PMb9l3yEIXs7oTHhFjQ7KP3u7regDm84vk9VODNdlm/tORNv8UjGeA==", "librarian"=>{"email"=>"aba@abc.om", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"", "library_id"=>"1"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mLibrarian Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "librarians" WHERE "librarians"."email" = $1 LIMIT $2[0m  [["email", "aba@abc.om"], ["LIMIT", 1]]
+  [1m[36mLibrarian Create (2.1ms)[0m  [1m[32mINSERT INTO "librarians" ("email", "encrypted_password", "name", "library_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "aba@abc.om"], ["encrypted_password", "$2a$11$rt1PykOHT.//moCGWQMqbuQ.CKE8BI/nQwFJjeNm04HPQ1F0BHakS"], ["name", ""], ["library_id", 1], ["created_at", "2019-10-09 05:35:06.703169"], ["updated_at", "2019-10-09 05:35:06.703169"]]
+  Rendering admin_mailer/new_librarian_waiting_for_approval.erb within layouts/mailer
+  Rendered admin_mailer/new_librarian_waiting_for_approval.erb within layouts/mailer (Duration: 0.8ms | Allocations: 113)
+AdminMailer#new_librarian_waiting_for_approval: processed outbound mail in 5.8ms
+Delivered mail 5d9d718abb735_119e3ffef96257cc25f5@Ayushs-MacBook-Pro.local.mail (1930.0ms)
+Date: Wed, 09 Oct 2019 01:35:06 -0400
+From: jn.ayush@gmail.com
+To: mitagavade@gmail.com
+Message-ID: <5d9d718abb735_119e3ffef96257cc25f5@Ayushs-MacBook-Pro.local.mail>
+Subject: New User Awaiting Admin Approval
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <p>Hello Boss,</p>
+<br >
+<p>aba@abc.om has registered as librarian to join your LMS!</p>
+  <p>An admin can approve this registration by visiting the Admin LMS Dashboard</p>
+  <br >
+  <p> Best Regards<p>
+  <p> Fucker <p>
+
+  </body>
+</html>
+
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2127ms (ActiveRecord: 4.0ms | Allocations: 38250)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:35:08 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 208)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3730)
+
+
+Started GET "/student_home" for ::1 at 2019-10-09 01:35:42 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 1578)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-09 01:35:42 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 2.1ms | Allocations: 804)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2884)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 30ms (Views: 11.9ms | ActiveRecord: 2.9ms | Allocations: 21344)
+
+
+Started GET "/students/sign_up" for ::1 at 2019-10-09 01:35:44 -0400
+Processing by Students::RegistrationsController#new as HTML
+  Rendering students/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  [1m[36mDegreeToBookMapping Load (5.5ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
+  ↳ app/views/students/registrations/new.html.erb:17:in `collect'
+  Rendered students/shared/_links.html.erb (Duration: 0.6ms | Allocations: 212)
+  Rendered students/registrations/new.html.erb within layouts/application (Duration: 23.6ms | Allocations: 8286)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 32ms (Views: 22.0ms | ActiveRecord: 8.6ms | Allocations: 12703)
+
+
+Started POST "/students" for ::1 at 2019-10-09 01:35:52 -0400
+Processing by Students::RegistrationsController#create as HTML
+  Parameters: {"authenticity_token"=>"+0Xuh8MEL5hD263KT9TI/QmLWz7VdcSq/mhRWy9/SdzVyXL+GAmtmmZptfeQwKBbnf1Qrl33iAgmSG9gOQYKOQ==", "student"=>{"email"=>"aa@aa.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "name"=>"", "degree_to_book_mappings_id"=>"1", "university"=>""}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mStudent Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "students" WHERE "students"."email" = $1 LIMIT $2[0m  [["email", "aa@aa.com"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering students/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 382)
+  [1m[36mDegreeToBookMapping Load (0.3ms)[0m  [1m[34mSELECT "degree_to_book_mappings".* FROM "degree_to_book_mappings"[0m
+  ↳ app/views/students/registrations/new.html.erb:17:in `collect'
+  Rendered students/shared/_links.html.erb (Duration: 0.6ms | Allocations: 164)
+  Rendered students/registrations/new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 4222)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 127ms (Views: 10.7ms | ActiveRecord: 1.2ms | Allocations: 14591)
+
+
+Started GET "/student_home" for ::1 at 2019-10-09 01:36:18 -0400
+Processing by StudentHomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 1597)
+
+
+Started GET "/students/sign_in" for ::1 at 2019-10-09 01:36:18 -0400
+Processing by Students::SessionsController#new as HTML
+  Rendering students/sessions/new.html.erb within layouts/application
+  Rendered students/shared/_links.html.erb (Duration: 0.3ms | Allocations: 243)
+  Rendered students/sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1818)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 6.4ms | ActiveRecord: 2.5ms | Allocations: 19456)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:36:18 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 207)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3949)
+
+
+Started GET "/" for ::1 at 2019-10-09 01:36:19 -0400
+Processing by LmsHomeController#index as HTML
+  Rendering lms_home/index.html.erb within layouts/application
+  Rendered lms_home/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 197)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 3696)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:36:20 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 562)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:36:20 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 0.2ms | Allocations: 162)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1767)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 7.1ms | ActiveRecord: 2.9ms | Allocations: 15093)
+
+
+Started GET "/librarians/sign_up" for ::1 at 2019-10-09 01:36:22 -0400
+Processing by Librarians::RegistrationsController#new as HTML
+  Rendering librarians/registrations/new.html.erb within layouts/application
+  Rendered /Users/ayush/.rvm/gems/ruby-2.5.1/gems/devise-4.7.1/app/views/devise/shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 15)
+  [1m[36mLibrary Load (0.4ms)[0m  [1m[34mSELECT "libraries".* FROM "libraries"[0m
+  ↳ app/views/librarians/registrations/new.html.erb:17:in `collect'
+  Rendered librarians/shared/_links.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered librarians/registrations/new.html.erb within layouts/application (Duration: 16.3ms | Allocations: 9474)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 22ms (Views: 18.0ms | ActiveRecord: 3.2ms | Allocations: 13401)
+
+
+Started GET "/admin_home" for ::1 at 2019-10-09 01:36:31 -0400
+Processing by AdminHomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 555)
+
+
+Started GET "/admins/sign_in" for ::1 at 2019-10-09 01:36:31 -0400
+Processing by Admins::SessionsController#new as HTML
+  Rendering admins/sessions/new.html.erb within layouts/application
+  Rendered admins/sessions/new.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1831)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+Completed 200 OK in 21ms (Views: 9.5ms | ActiveRecord: 2.4ms | Allocations: 12938)
+
+
+Started GET "/librarian_home" for ::1 at 2019-10-09 01:36:33 -0400
+Processing by LibrarianHomeController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 506)
+
+
+Started GET "/librarians/sign_in" for ::1 at 2019-10-09 01:36:33 -0400
+Processing by Librarians::SessionsController#new as HTML
+  Rendering librarians/sessions/new.html.erb within layouts/application
+  Rendered librarians/shared/_links.html.erb (Duration: 0.3ms | Allocations: 149)
+  Rendered librarians/sessions/new.html.erb within layouts/application (Duration: 9.0ms | Allocations: 1748)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 5504)
+
+
