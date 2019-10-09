@@ -17,6 +17,8 @@ class Student < ApplicationRecord
     student.email = auth.info.email
     student.password = Devise.friendly_token[0, 20]
     student.name = auth.info.name   # assuming the student model has a name
+    student.university = 'NCSU'
+    student.degree_to_book_mappings_id = 1
     # If you are using confirmable and the provider(s) you use validate emails, 
     # uncomment the line below to skip the confirmation emails.
     # student.skip_confirmation!
