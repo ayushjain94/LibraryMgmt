@@ -4,7 +4,11 @@ class LibrariesController < ApplicationController
   # GET /libraries
   # GET /libraries.json
   def index
-    @libraries = Library.all
+    if @current_user == 'librarian'
+      @libraries = Library.where(id: current_librarian.library_id)
+    elsif @current_user == 'admin'
+      @libraries = Library.all
+    end
   end
 
   # GET /libraries/1
@@ -62,13 +66,14 @@ class LibrariesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_library
-      @library = Library.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def library_params
-      params.require(:library).permit(:name, :university, :location, :max_borrow_count, :fine)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_library
+    @library = Library.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def library_params
+    params.require(:library).permit(:name, :university, :location, :max_borrow_count, :fine)
+  end
 end

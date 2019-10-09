@@ -12,7 +12,6 @@ class IssuesController < ApplicationController
     else
       @issues = Issue.all
     end
-    p @issues
   end
 
   # GET /issues/1

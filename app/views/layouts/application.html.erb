@@ -58,6 +58,8 @@
         <%= link_to 'Issued Books', issues_path, class: "nav-link text-secondary" %>
 
         <%= link_to 'Overdue Books', show_overdue_path(current_librarian.id), class: "nav-link text-secondary" %>
+
+        <%= link_to 'Edit Library', edit_library_path(current_librarian.library_id), class: "nav-link text-secondary" %>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">
