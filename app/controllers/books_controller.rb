@@ -1,22 +1,57 @@
 class BooksController < ApplicationController
   # before_action :authenticate_student!
   before_action :set_book, only: [:show, :edit, :update, :destroy, :student_check_out, :bookmark]
+  before_action :set_book_for_lib, only: [:add_to_lib, :remove_from_lib]
+
 
   # GET /books
   # GET /books.json
   def index
-    if current_student.nil?
-      @id = ''
-    else
-      @id = (Student.find_by email: current_student.email).id
-    end
-    @books = Book.search(params[:search], @id)
+    @books = search(params[:search], @current_user)
   end
 
   # GET /books/1
   # GET /books/1.json
   def show
   end
+
+  # search
+  def search(search, current_user)
+    if current_user == 'admin'
+      if search.blank?
+        @books = Book.all
+      else
+        @l_search = search.downcase
+        @books = Book.all.where("(lower(title) LIKE :search OR lower(author) LIKE :search)", search: "%#{@l_search}%")
+      end
+    elsif current_user == 'student'
+      @id = (Student.find_by email: current_student.email).id
+      @univ = Student.find(id).university
+      @lib = (Library.find_by university: @univ)
+      if search.blank?
+        if @lib.nil?
+          @books = Hash.new
+        else
+          @books = Book.all.where("library_id = :library", library: "#{@lib.id}")
+        end
+      else
+        @l_search = search.downcase
+        @books = Book.all.where("(lower(title) LIKE :search OR lower(author) LIKE :search) and library_id = :library", search: "%#{@l_search}%", library: "#{@lib}")
+      end
+    elsif current_user == 'librarian'
+      @librarian = Librarian.find_by email: current_librarian.email
+      @lib = Library.find(@librarian.library_id)
+      if search.blank?
+        @books = Book.all.where("library_id = :library", library: "#{@lib.id}")
+      else
+        @l_search = search.downcase
+        @books = Book.all.where("library_id = :library and (lower(title) LIKE :search OR lower(author) LIKE :search)", library: "#{@lib.id}", search: "%#{@l_search}%")
+      end
+    elsif current_user == 'admin'
+      @id = ''
+    end
+  end
+
 
   # GET /books/new
   def new
@@ -82,6 +117,56 @@ class BooksController < ApplicationController
     end
   end
 
+  def update_to_lib
+    @books = Book.all
+  end
+
+  def add_to_lib
+    # count = Book.find_by(library_id: student_id, id: @book.id)
+    if @book.nil?
+      book = Book.find_by(id: params[:param_1])
+      @book = book.dup
+      @book.count = 1
+      @book.library_id = params[:param_2]
+    else
+      @book.count = @book.count + 1
+    end
+    respond_to do |format|
+      if @book.save
+        format.html { redirect_to @book, notice: 'Book was successfully added to the library.' }
+        format.json { render :show, status: :created, location: @book }
+      else
+        format.html { render :new }
+        format.json { render json: @book.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  def remove_from_lib
+    @book.count = @book.count - 1
+    if @book.count == 0
+      respond_to do |format|
+        if @book.destroy
+          format.html { redirect_to @book, notice: 'Book was successfully removed from the library.' }
+          format.json { render :show, status: :created, location: @book }
+        else
+          format.html { render :new }
+          format.json { render json: @book.errors, status: :unprocessable_entity }
+        end
+      end
+    else
+      respond_to do |format|
+        if @book.save
+          format.html { redirect_to @book, notice: 'Book was successfully removed from the library.' }
+          format.json { render :show, status: :created, location: @book }
+        else
+          format.html { render :new }
+          format.json { render json: @book.errors, status: :unprocessable_entity }
+        end
+      end
+    end
+  end
+
   def unbookmark
     student_id = (Student.find_by email: current_student.email).id
     @bookmark = Bookmark.find_by(student_id: student_id, book_id: params[:id])
@@ -139,7 +224,6 @@ class BooksController < ApplicationController
         end
       end
     else
-      p student
       check_out(student)
     end
   end
@@ -191,8 +275,13 @@ class BooksController < ApplicationController
     @book = Book.find(params[:id])
   end
 
+  def set_book_for_lib
+    @book = Book.find_by(library_id: params[:param_2], id: params[:param_1])
+  end
+
   # Never trust parameters from the scary internet, only allow the white list through.
   def book_params
     params.require(:book).permit(:search, :isbn, :title, :author, :is_available, :language, :publish_date, :edition, :image, :subject, :summary, :is_special, :is_active, :count, :library_id)
   end
+
 end

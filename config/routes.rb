@@ -45,4 +45,7 @@ Rails.application.routes.draw do
   get 'book_audits/:id/show_history', to: 'book_audits#show_history', :as => :book_audits_show_history
   post 'books/:id/unbookmark', to: 'books#unbookmark', :as => :books_unbookmark
   post 'issues/:id/return', to: 'issues#return', :as => :issues_return
+  get 'books/:id/update_to_lib', to: 'books#update_to_lib', :as => :update_to_lib
+  post 'books/:id/add_to_lib', to: 'books#add_to_lib', :as => :add_to_lib
+  post 'books/:id/remove_from_lib', to: 'books#remove_from_lib', :as => :remove_from_lib
 end

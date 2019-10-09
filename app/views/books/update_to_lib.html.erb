@@ -30,10 +30,11 @@
   </tr>
   </thead>
 
+  <% @currlib = Library.find(current_librarian.library_id).name %>
   <tbody>
   <% if !@books.nil? %>
     <% @books.each do |book| %>
-      <% @lib = Library.find(book.library_id).name %>
+      <% @lib = Library.find(book.library_id) %>
       <tr>
         <td><%= book.isbn %></td>
         <td><%= book.title %></td>
@@ -45,40 +46,19 @@
         <td><%= book.subject %></td>
         <td><%= book.summary %></td>
         <td><%= book.is_special %></td>
-        <td><%= @lib %></td>
+        <td><%= @lib.name %></td>
         <td><%= book.count %></td>
-        <% if @current_user =='student' %>
-        <td><%= link_to 'Check Out', books_student_check_out_path(book), method: :post %></td>
-          <% if Bookmark.find_by(student_id: (Student.find_by email: current_student.email).id, book_id: book.id).nil? %>
-          <td><%= link_to 'Bookmark', books_bookmark_path(book), method: :post %></td>
-          <% else %>
-          <td><%= link_to 'Unbookmark', books_unbookmark_path(book), method: :post %></td>
-          <% end %>
+        <% if @lib.id == current_librarian.library_id %>
+          <td><%= link_to 'Add to ' + @currlib.capitalize, add_to_lib_path(param_1: book, param_2: current_librarian.library_id), method: :post %></td>
+          <td><%= link_to 'Remove from ' + @currlib.capitalize, remove_from_lib_path(param_1: book, param_2: current_librarian.library_id), method: :post %></td>
+        <% else %>
+          <td><%= link_to 'Add to ' + @currlib.capitalize, add_to_lib_path(param_1: book, param_2: current_librarian.library_id), method: :post %></td>
         <% end %>
-        <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
-        <td><%= link_to 'Destroy', book, method: :delete, data: {confirm: 'Are you sure?'} %></td>
       </tr>
     <% end %>
   <% end %>
   </tbody>
 </table>
-
-<% if (admin_signed_in?)%>
-  <br>
-  <div class="row justify-content-center">
-    <%= link_to "Create book", new_book_path, class: "btn btn-success" %>
-  </div>
-  <br>
-<% end %>
-
-<% if (librarian_signed_in?)%>
-  <br>
-  <div class="row justify-content-center">
-    <%= link_to "Add/Remove", update_to_lib_path(current_librarian.id), class: "btn btn-success" %>
-  </div>
-  <br>
-<% end %>
 
 <br>
 

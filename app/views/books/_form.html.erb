@@ -29,7 +29,6 @@
     <%= form.number_field :count %>
 
   <div class="field">
-    <%= form.label :library_id %>
     <%= form.select :library_id, Library.all.collect { |c| [c.name, c.id] }, {label: "Select library"} %>
   </div>
 
