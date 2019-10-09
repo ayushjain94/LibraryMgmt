@@ -32,7 +32,7 @@
       <td><%= book.title %></td>
       <td><%= issue.issued_from %></td>
       <% if Date.today > issue.due_date %>
-        <td><%= (issue.due_date - Date.today).to_i * 10 %></td>
+        <td><%= (issue.due_date - Date.today).to_i * lib.fine %></td>
       <% else %>
         <td><%= 0.0 %></td>
       <% end %>
