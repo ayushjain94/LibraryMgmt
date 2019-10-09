@@ -9,6 +9,8 @@ class IssuesController < ApplicationController
       @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id WHERE books.library_id = #{@lid}")
     elsif @current_user == 'student'
       @issues = Issue.where(student_id: @current_user.id)
+    else
+      @issues = Issue.all
     end
     p @issues
   end
@@ -19,7 +21,12 @@ class IssuesController < ApplicationController
   end
 
   def show_overdue
-    @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id AND issues.due_date < current_date")
+    if @current_user == 'student'
+      @lid = current_librarian.library_id
+      @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id AND issues.due_date < current_date WHERE books.library_id = #{@lid}")
+    else
+      @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id AND issues.due_date < current_date")
+    end
     render "index"
   end
 
