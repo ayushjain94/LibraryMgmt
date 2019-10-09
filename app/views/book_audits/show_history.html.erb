@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<h3>ISSUE HISTORY</h3>
+
+<table class="table table-hover row-clickable">
+  <thead>
+  <tr>
+    <th>Student ID</th>
+    <th>Email</th>
+    <th>Issued date</th>
+    <th>Returned date</th>
+    <th>Book ID</th>
+    <th>Isbn</th>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Image</th>
+    <th>Subject</th>
+    <th>Summary</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @book_audits.each do |book_audit| %>
+    <% book = Book.find(book_audit.book_id) %>
+    <% student = Student.find(book_audit.student_id) %>
+    <tr>
+      <td><%= student.id %></td>
+      <td><%= student.email %></td>
+      <td><%= book_audit.issued_date %></td>
+      <td><%= book_audit.returned_date %></td>
+      <td><%= book_audit.book_id %></td>
+      <td><%= book_audit.isbn %></td>
+      <td><%= book_audit.title %></td>
+      <td><%= book_audit.author %></td>
+      <td><%= image_tag book.image.url, width: '100px' if book.image.present? %></td>
+      <td><%= book_audit.subject %></td>
+      <td><%= book_audit.summary %></td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>

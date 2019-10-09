@@ -2,13 +2,12 @@
 
 <h1>Book Audits</h1>
 
-<table>
+<table class="table table-hover row-clickable">
   <thead>
     <tr>
       <th>Isbn</th>
       <th>Title</th>
       <th>Author</th>
-      <th>Is available</th>
       <th>Language</th>
       <th>Publish date</th>
       <th>Edition</th>
@@ -27,15 +26,15 @@
 
   <tbody>
     <% @book_audits.each do |book_audit| %>
+    <% book = Book.find(book_audit.book_id) %>
       <tr>
         <td><%= book_audit.isbn %></td>
         <td><%= book_audit.title %></td>
         <td><%= book_audit.author %></td>
-        <td><%= book_audit.is_available %></td>
         <td><%= book_audit.language %></td>
         <td><%= book_audit.publish_date %></td>
         <td><%= book_audit.edition %></td>
-        <td><%= book_audit.image %></td>
+        <td><%= image_tag book.image.url, width: '100px' if book.image.present? %></td>
         <td><%= book_audit.subject %></td>
         <td><%= book_audit.summary %></td>
         <td><%= book_audit.is_special %></td>
@@ -47,6 +46,7 @@
         <td><%= link_to 'Show', book_audit %></td>
         <td><%= link_to 'Edit', edit_book_audit_path(book_audit) %></td>
         <td><%= link_to 'Destroy', book_audit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'History', book_audits_show_history_path(book_audit.book_id)%></td>
       </tr>
     <% end %>
   </tbody>

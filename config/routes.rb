@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   get 'approve_holdrequest/:id' => 'hold_requests#approve_holdrequest', :as => :approve_holdrequest
 
   get 'student/:id/issues' => 'issues#get_issued_books', :as => :get_issued_books
+  get 'book_audits/:id/show_history', to: 'book_audits#show_history', :as => :book_audits_show_history
   post 'books/:id/unbookmark', to: 'books#unbookmark', :as => :books_unbookmark
   post 'issues/:id/return', to: 'issues#return', :as => :issues_return
 end
