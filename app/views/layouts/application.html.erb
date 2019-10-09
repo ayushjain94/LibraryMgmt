@@ -50,7 +50,13 @@
 
     <% elsif librarian_signed_in? %>
       <ul class="navbar-nav mr-auto">
-        <%= link_to 'New Book', new_book_path, class: "nav-link text-secondary" %>
+        <%= link_to 'View Books', books_path, class: "nav-link text-secondary" %>
+
+        <%= link_to 'Update Books', update_to_lib_path(current_librarian.id), class: "nav-link text-secondary" %>
+
+        <%= link_to 'Issued Books', issues_path, class: "nav-link text-secondary" %>
+
+        <%= link_to 'Overdue Books', show_overdue_path(current_librarian.id), class: "nav-link text-secondary" %>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item dropdown">

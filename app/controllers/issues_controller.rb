@@ -4,17 +4,23 @@ class IssuesController < ApplicationController
   # GET /issues
   # GET /issues.json
   def index
-    if current_student.nil?
-      @id = ''
-    else
-      @id = (Student.find_by email: current_student.email).id
+    if @current_user == 'librarian'
+      @lid = current_librarian.library_id
+      @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id WHERE books.library_id = #{@lid}")
+    elsif @current_user == 'student'
+      @issues = Issue.where(student_id: @current_user.id)
     end
-    @issues = Issue.where(student_id: @id)
+    p @issues
   end
 
   # GET /issues/1
   # GET /issues/1.json
   def show
+  end
+
+  def show_overdue
+    @issues = Issue.joins("INNER JOIN books ON books.id = issues.book_id AND issues.due_date < current_date")
+    render "index"
   end
 
   def return
@@ -36,7 +42,7 @@ class IssuesController < ApplicationController
       end
     else
       # redirect_to('/admin_home/holdrequestapprovals')
-      redirect_to books_admin_check_out_path(param_1: @hreq.student_id, param_2: @hreq.book_id,  id:@hreq.id)
+      redirect_to books_admin_check_out_path(param_1: @hreq.student_id, param_2: @hreq.book_id, id: @hreq.id)
     end
 
   end

@@ -5,6 +5,11 @@
 <table class="table table-hover row-clickable">
   <thead>
   <tr>
+    <% if @current_user != 'student' %>
+      <th scope="col">Student ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+    <% end %>
     <th scope="col">Isbn</th>
     <th scope="col">Title</th>
     <th scope="col">Issue date</th>
@@ -25,14 +30,20 @@
   <tbody>
   <% @issues.each do |issue| %>
     <% book = Book.find(issue.book_id) %>
-    <% lib = Library.find(book.library_id).name %>
+    <% student = Student.find(issue.student_id) %>
+    <% lib = Library.find(book.library_id) %>
     <% %>
     <tr>
+      <% if @current_user != 'student' %>
+        <td scope="col"><%= student.id %></td>
+        <td scope="col"><%= student.name %></td>
+        <td scope="col"><%= student.email %></td>
+      <% end %>
       <td scope="row"><%= book.isbn %></td>
       <td><%= book.title %></td>
       <td><%= issue.issued_from %></td>
       <% if Date.today > issue.due_date %>
-        <td><%= (issue.due_date - Date.today).to_i * lib.fine %></td>
+        <td><%= (Date.today - issue.due_date).to_i * lib.fine %></td>
       <% else %>
         <td><%= 0.0 %></td>
       <% end %>
@@ -44,8 +55,10 @@
       <td><%= image_tag book.image.url, width: '100px' if book.image.present? %></td>
       <td><%= book.subject %></td>
       <td><%= book.summary %></td>
-      <td><%= lib %></td>
-      <td><%= link_to 'Return', issues_return_path(issue), method: :post %></td>
+      <td><%= lib.name %></td>
+      <% if @current_user == 'student' %>
+        <td><%= link_to 'Return', issues_return_path(issue), method: :post %></td>
+      <% end %>
     </tr>
   <% end %>
   </tbody>

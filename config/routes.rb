@@ -46,6 +46,7 @@ Rails.application.routes.draw do
   post 'books/:id/unbookmark', to: 'books#unbookmark', :as => :books_unbookmark
   post 'issues/:id/return', to: 'issues#return', :as => :issues_return
   get 'books/:id/update_to_lib', to: 'books#update_to_lib', :as => :update_to_lib
+  get 'issues/:id/show_overdue', to: 'issues#show_overdue', :as => :show_overdue
   post 'books/:id/add_to_lib', to: 'books#add_to_lib', :as => :add_to_lib
   post 'books/:id/remove_from_lib', to: 'books#remove_from_lib', :as => :remove_from_lib
 end
