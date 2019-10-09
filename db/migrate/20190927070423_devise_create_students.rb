@@ -16,7 +16,7 @@ class DeviseCreateStudents < ActiveRecord::Migration[6.0]
 
       #Custom Fields
       t.string :educational_level
-      t.string :university
+      t.string :university, null: false
       t.float :fine_due
       t.boolean :is_active
 

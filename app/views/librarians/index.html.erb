@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th>Email</th>
-      <th>Password</th>
       <th>Name</th>
       <th>Library</th>
       <th>Approved</th>
@@ -18,7 +17,6 @@
     <% @librarians.each do |librarian| %>
       <tr>
         <td><%= librarian.email %></td>
-        <td><%= librarian.password %></td>
         <td><%= librarian.name %></td>
         <td><%= librarian.library_id %></td>
         <td><%= librarian.approved %></td>

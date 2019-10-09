@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_10_08_055117) do
+ActiveRecord::Schema.define(version: 2019_10_09_015102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -154,13 +154,13 @@ ActiveRecord::Schema.define(version: 2019_10_08_055117) do
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
     t.string "educational_level"
-    t.string "university"
+    t.string "university", null: false
     t.float "fine_due"
     t.boolean "is_active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "name"
-    t.bigint "degree_to_book_mappings_id"
+    t.bigint "degree_to_book_mappings_id", null: false
     t.string "provider"
     t.string "uid"
     t.string "token"
