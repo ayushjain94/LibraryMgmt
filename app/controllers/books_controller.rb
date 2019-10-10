@@ -209,13 +209,13 @@ class BooksController < ApplicationController
       respond_to do |format|
         if @holdreq.save
           if @current_count >= @max_books_count
-            format.html { redirect_to @book, notice: 'Exhausted limit for checking out books. Pending hold request registered.' }
+            format.html { redirect_to hold_requests_path, notice: 'Exhausted limit for checking out books. Pending hold request registered.' }
             format.json { render :show, status: :created, location: @book }
           elsif @book.is_special
-            format.html { redirect_to @book, notice: 'This book belongs to our special collection. Pending hold request registered.' }
+            format.html { redirect_to hold_requests_path, notice: 'This book belongs to our special collection. Pending hold request registered.' }
             format.json { render :show, status: :created, location: @book }
           elsif @book.count.zero?
-            format.html { redirect_to @book, notice: 'Resource currently unavailable. Pending hold request registered.' }
+            format.html { redirect_to hold_requests_path, notice: 'Resource currently unavailable. Pending hold request registered.' }
             format.json { render :show, status: :created, location: @book }
           else
             format.html { render :new }
@@ -258,7 +258,7 @@ class BooksController < ApplicationController
 
     respond_to do |format|
       if @book_audit.save && @book.save && @issue.save
-        format.html { redirect_to @book, notice: 'Book was successfully checked out.' }
+        format.html { redirect_to issues_path, notice: 'Book was successfully checked out.' }
         format.json { render :show, status: :created, location: @book_audit }
       else
         format.html { render :new }
