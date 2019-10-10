@@ -4,7 +4,7 @@ Admin creds: username: ajain37@ncsu.edu password: 123456
 
 Points to be noted:
 
-Facebook login - Only for student - Default Education level (Masters) and University (NCSU) will be set facebook has a business process to approve applications, since we don't have any business so it's not possible to make this facebook app based login live. There's another way for approval which is individual but that goes through a week of approval process. We can add you as one of the tester in the development console of facebook then you should be able to login. Please drop an email to one of our team member for this.
+Facebook login - Only for student - Default Education level (Masters) and University (NCSU) will be set. Facebook has a business process to approve applications, since we don't have any business so it's not possible to make this facebook app based login live. There's another way for approval which is individual but that goes through a week of approval process. We can add you as one of the tester in the development console of facebook then you should be able to login. Please drop an email to one of our team member for this.
 
 Password reset for admin/student/librarian
 
