@@ -35,7 +35,7 @@ Mailer set-up (Use personal mail as enterprise emails block the delivery of pass
 * SPECIAL CATEGORY + BOOK UNAVAILABLE: Auto check out when admin approves and book in stock
 * SPECIAL CATEGORY + MAX BOOKS EXCEEDED: Auto check out when admin approves and student returns either of his books
 
-**Max books to be check out per student determined on his educational degree This can be changed by admin by degree to book mapping link ** <br>
+**Max books to be check out per student determined on his educational degree This can be changed by admin by degree to book mapping link** <br>
 
 #### Manage Students:
 Admin can click on manage students link from header to edit student information, create new student and destroy existing one
