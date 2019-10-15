@@ -12,7 +12,7 @@ This README would normally document whatever steps are necessary to get the appl
 Points to be noted:
 
 #### Repository Update:
-We had used a NCSU enterprise github repository earlier but later after first deadline moved to the public github repository, so commits before first deadline is available on this [repository!](https://github.ncsu.edu/schawan/LMS)
+We had used a NCSU enterprise github repository earlier but later after first deadline moved to the public github repository, so commits before first deadline is available on this [repository!](https://github.ncsu.edu/schawan/LMS). Also, please check commits in different branches, we don't have many commits in master branch for previous repository
 
 ### Extra Credit Functionalities:
 
